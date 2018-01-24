@@ -7,7 +7,7 @@ var detailed={
 			sendUrl="menu.json";
 			//sendData="uidUserId="+base.getUidUserId()+'&iTaskId='+base.GetQueryString("iTaskId");
 			$.ajax({
-				type:"POST",
+				type:"GET",
 				url:sendUrl,
 				data:sendData,
 				dataType:"JSON",
