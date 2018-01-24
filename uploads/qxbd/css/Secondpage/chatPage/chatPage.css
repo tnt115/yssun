@@ -1,0 +1,595 @@
+body {
+	background-color: #fff;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+a,li,ul {
+	list-style: none;
+	text-decoration: none;
+}
+
+.mui-bar {
+	background: none;
+	position: static;
+	z-index: 0;
+}
+
+.mui-bar-nav {
+	box-shadow: none;
+}
+
+.mui-bar .mui-btn-nav.mui-pull-right {
+	margin: 0;
+}
+
+#header {
+	background-color: #00AF77;
+	margin-bottom: .7rem;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+
+#header>button,#header>h2 {
+	color: #fff;
+}
+
+/*点击按钮变颜色，增加交互感觉*/
+#msg-type:active,#carme:active,#photos:active {
+	background-color: #ccc;
+}
+/*点击用户发过来的图片在网页中放大*/
+#scale {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	visibility: hidden;
+	opacity: 0;
+	background-color: rgba(25, 23, 23, 0.72);
+	line-height: 500px;
+	text-align: center;
+	transition: all .5s;
+}
+
+#scale img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/*动态页面,聊天样式*/
+#pullrefresh ul li>p {
+	text-align: center;
+	margin: 0;
+}
+
+.time>span {
+	display: inline-block;
+	padding: 0 .2rem;
+	border-radius: .1rem;
+	font-size: 12px;
+}
+
+#pullrefresh ul li {
+	/* font-size: 1rem; */
+	font-size: .5rem;
+	margin-bottom: .4rem;
+}
+
+.pic>img {
+	width: .9rem;
+	height: .9rem;
+	border-radius: 50%;
+}
+
+/*他人开始*/
+.others>.pic {
+	float: left;
+}
+
+.others>.chat {
+	margin-left: 1.2rem;
+	position: relative;
+}
+
+.others>.chat>.name,.shef>.chat>.name {
+	font-size: .3rem;
+	color: #646464;
+}
+
+.others>.chat>.text,.shef>.chat>.text {
+	display: inline-block;
+	border-radius: 2px;
+	/* padding: .12rem; */
+	padding: .1rem;
+	box-sizing: border-box;
+	color: #323232;
+	font-size: .25rem;
+	position: relative;
+	max-width: 100%;
+	word-wrap: break-word;
+}
+
+.others>.chat>.text {
+	background-color: rgba(169, 168, 168, 0.16);
+}
+
+.shef>.chat>.text {
+	background-color: #98E165;
+}
+
+.others>.chat>.text:before,.shef>.chat>.text:after {
+	content: " ";
+	position: absolute;
+	/*   	 width: .2rem;
+    height: .2rem; */
+	left: -.13rem;
+	top: .05rem;
+	background-color: #FFF;
+	border: 1px solid #ccc;
+	-webkit-transform: rotate(45deg);
+	border-top: transparent;
+	border-right: transparent;
+}
+
+/*自己聊天开始*/
+.shef .pic {
+	float: right;
+}
+
+.shef .text {
+	text-align: left;
+}
+
+.shef .chat {
+	text-align: right;
+	padding-right: 1.2rem;
+}
+
+.shef>.chat>.text {
+	position: relative;
+	min-width:50px;
+}
+
+.shef>.chat>.text:after {
+	border: 1px solid #ccc;
+	border-left: transparent;
+	border-bottom: transparent;
+	left: 100%;
+	margin-left: -.09rem;
+}
+
+/*统一聊天样式*/
+#pullrefresh .text>img {
+	max-width: 100%;
+	max-height: 120px;
+}
+
+/*编辑区样式开始*/
+
+/*左侧语音样式开始*/
+.footer-left {
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	left: 0px;
+	bottom: 0px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 45px;
+}
+
+footer {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	min-height: 45px;
+	min-height: 45px;
+	width: 100%;
+	border-top: solid 1px #bbb;
+	padding: 0px 90px 0px 45px;
+	background-color: #fafafa;
+	z-index: 666;
+}
+
+footer .mui-icon {
+	color: #000;
+}
+
+/*左侧相机样式结束*/
+
+/*中间输入框开始*/
+.footer-center {
+	height: 100%;
+	padding: .1rem 0;
+	margin: 0;
+	position: relative;
+}
+
+.footer-center .input-text {
+	background: #fff;
+	border: solid 1px #ddd;
+	padding: 6px !important;
+	font-size: 16px !important;
+	line-height: 18px !important;
+	font-family: verdana !important;
+	overflow: hidden;
+}
+
+#msg-text {
+	height: 100%;
+	-webkit-user-select: auto;
+	overflow-y: atuo;/* 或者scroll */
+    -webkit-overflow-scrolling: touch;/* 解决ios滑动不流畅问题 */
+	font-size: .3rem !important;
+	max-height: 200px;
+	overflow: scroll;
+}
+
+/*语音样式 默认为隐藏的*/
+#msg-sound {
+	position: absolute;
+	bottom: 5px;
+	height: 32px;
+}
+
+.footer-center [class*=input] {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+.footer-center .input-sound {
+	background-color: #eee;
+}
+
+.footer-center .input-sound {
+	background-color: #eee;
+}
+
+.footer-center [class*=input] {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+/*右侧点击发送和加载更多图标*/
+.footer-right {
+	position: absolute;
+	width: 90px;
+	height: 45px;
+	right: 0px;
+	bottom: 0px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 100%;
+	display: inline-block;
+	padding: 7px 5px;
+}
+
+.send,.more_icon {
+	float: left;
+}
+
+.send {
+	padding: 5px;
+}
+
+.more_icon {
+	height: 100%;
+	padding: 0 5px;
+	line-height: 36px;
+}
+
+#msg-image {
+	position: relative;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+}
+
+#more_icon_action {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	z-index: 100;
+	padding: 5px 10px;
+	display: none;
+	background-color: #FAFAFA;
+	margin-top: -1px;
+}
+
+#more_icon_action>span {
+	display: inline-block;
+	padding: 1px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-right: .5rem;
+}
+
+.others>.chat>.text img,.shef>.chat>.text img {
+	margin-bottom: -6px;
+}
+
+/*播放语音样式*/
+.voice {
+	display: block;
+	height: 20px;
+	width: 2rem;
+	/*  margin-bottom: -6px; */
+	position: relative;
+}
+
+.vCotent {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+}
+
+.others .vCotent {
+	top: 0;
+	left: 0;
+	background: url(../../../images/chatPage/others/3.png) 0 0 no-repeat
+}
+
+.shef .vCotent {
+	left: 100%;
+	margin-left: -20px;
+	background: url(../../../images/chatPage/shef/3.png) 0 0 no-repeat;
+}
+/*由js控制这两个样式,来播放语音*/
+.othersAnimation {
+	animation: voicePlay 1s infinite;
+	-webkit-animation:voicePlay 1s infinite;
+}
+
+.shefAnimation {
+	animation: voicePlay_ 1s infinite;
+	-webkit-animation:voicePlay_ 1s infinite;
+}
+/*他人语音播放时的动画指针*/
+@keyframes voicePlay {
+	0% {
+		background: transparent url(../../../images/chatPage/others/1.png) -7px 0 no-repeat;
+	}
+	30% {
+		background: transparent url(../../../images/chatPage/others/1.png) -7px 0 no-repeat;
+	}
+	60% {
+		background: transparent url(../../../images/chatPage/others/2.png) -5.5px 0 no-repeat;
+	}
+	100% {
+		background: transparent url(../../../images/chatPage/others/3.png) -3px 0 no-repeat;
+	}
+}
+/*自己语音播放时的动画指针*/
+@keyframes voicePlay_ {
+	0% {
+		background: transparent url(../../../images/chatPage/shef/1.png) 7px 0 no-repeat;
+	}
+	30% {
+		background: transparent url(../../../images/chatPage/shef/1.png) 7px 0 no-repeat;
+	}
+	60% {
+		background: transparent url(../../../images/chatPage/shef/2.png) 5.5px 0 no-repeat;
+	}
+	100% {
+		background: transparent url(../../../images/chatPage/shef/3.png) 3px 0 no-repeat;
+	}
+}
+
+/*图片预览样式开始*/
+.mui-preview-image.mui-fullscreen {
+	position: fixed;
+	z-index: 667;
+	background-color: #000;
+}
+
+.mui-preview-header,.mui-preview-footer {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	z-index: 10;
+}
+
+.mui-preview-header {
+	height: 44px;
+	top: 0;
+	text-align: center;
+}
+
+.mui-preview-footer {
+	height: 50px;
+	bottom: 0px;
+}
+
+.mui-preview-header .mui-preview-indicator {
+	display: inline-block;
+	line-height: 44px;
+	color: #fff;
+	text-align: center;
+	margin: 15px auto 4;
+	width: 70px;
+	border-radius: 12px;
+	font-size: 16px;
+}
+
+.mui-preview-image {
+	display: none;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.mui-preview-image.mui-preview-in {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+.mui-preview-image.mui-preview-out {
+	background: none;
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+
+.mui-preview-image.mui-preview-out .mui-preview-header,.mui-preview-image.mui-preview-out .mui-preview-footer
+	{
+	display: none;
+}
+
+.mui-zoom-scroller {
+	position: absolute;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	-webkit-backface-visibility: hidden;
+}
+
+.mui-zoom {
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.mui-slider .mui-slider-group .mui-slider-item img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.mui-android-4-1 .mui-slider .mui-slider-group .mui-slider-item img {
+	width: 100%;
+}
+
+.mui-android-4-1 .mui-slider.mui-preview-image .mui-slider-group .mui-slider-item
+	{
+	display: inline-table;
+}
+
+.mui-android-4-1 .mui-slider.mui-preview-image .mui-zoom-scroller img {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.mui-preview-loading {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.mui-preview-loading.mui-active {
+	display: block;
+}
+
+.mui-preview-loading .mui-spinner-white {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -25px;
+	margin-top: -25px;
+	height: 50px;
+	width: 50px;
+}
+
+.mui-preview-image img.mui-transitioning {
+	-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+	transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+@
+-webkit-keyframes fadeIn { 0% {
+	opacity: 0;
+}
+
+100%
+{
+opacity
+:
+ 
+1;
+}
+}
+@
+keyframes fadeIn { 0% {
+	opacity: 0;
+}
+
+100%
+{
+opacity
+:
+ 
+1;
+}
+}
+@
+-webkit-keyframes fadeOut { 0% {
+	opacity: 1;
+}
+
+100%
+{
+opacity
+:
+ 
+0;
+}
+}
+@
+keyframes fadeOut { 0% {
+	opacity: 1;
+}
+
+100%
+{
+opacity
+:
+ 
+0;
+}
+}
+p img {
+	max-width: 100%;
+	height: auto;
+}
+/*图片预览样式结束*/
+.mui-content {
+	background-color: #fff;
+}
+
+.mui-table-view:before,.mui-table-view:after {
+	height: 0px;
+}
+
+.mui-table-view {
+	padding: .3rem .3rem 1.5rem .3rem;
+}
+
+button:enabled:active {
+	color: #333;
+	background-color: #D4D4D4;
+	!
+	important;
+}

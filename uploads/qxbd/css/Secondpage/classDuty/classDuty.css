@@ -1,0 +1,46 @@
+.header_left{
+	width: 100%;
+}
+.grade, .Class, .btn {
+    width: 2.7rem;
+}
+.btn{
+	    width: 1.2rem;
+}
+.header {
+    padding: 0;
+}
+#content {
+    padding: .2rem;
+}
+.list{
+	 margin-top: .4rem;
+}
+.list ul>li{
+	  background-color: #eee;
+	  border-radius: 5px;
+	      margin-bottom: .2rem;
+}
+.mui-table-view:before,.mui-table-view:after,.mui-table-view-cell:after{
+	height: 0;
+}
+.list li>a{
+	    color: #646464;
+    	font-size: .3rem;
+    padding-right: 30px !important;
+}
+.list li>a span{
+	color: #808080;
+    margin-right: 5px;
+}
+.list li>a span:nth-child(1){
+	margin-left: .3rem;
+}
+#errorMsg{
+	font-size: .3rem;
+    color: #646464;
+    text-align: center;
+    display:none;
+}
+.mui-table-view-cell {
+    padding: .25rem 15px;

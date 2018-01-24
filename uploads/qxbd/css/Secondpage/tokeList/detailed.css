@@ -1,0 +1,65 @@
+#content {
+	padding: .4rem;
+}
+
+#js_article {
+	font-size: .4rem;
+	color: #323232;
+	font-weight: bold;
+	 line-height: .6rem;
+}
+
+.text .title {
+    margin-top: .6rem;
+    float: right;
+}
+.textAndPic .title,.text .title{
+	font-size: .3rem;
+    color: #808080;
+}
+.textAndPic .title_name,.textAndPic .title_time{
+		display: inline-block;
+}
+.text .parent{
+	 font-size: .35rem;
+	 margin-top: .7rem;
+}
+.text .title_time{
+	    margin-left: .3rem;
+}
+.text .parent_content{
+    text-indent: .7rem;
+    color: #808080;
+    line-height: .45rem;
+}
+.text .text_content p{
+	    margin-bottom: .3rem;
+}
+.text .title_name,.title_time{
+	line-height: .45rem;
+	text-align: center;
+}
+.textAndPic .title {
+	font-size: .3rem;
+    margin-top: 0.1rem;
+    margin-bottom: .4rem;
+}
+.textAndPic .title .title_time{
+	margin-left: .2rem;
+}
+.textAndPic{
+	
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+	
+}
+.textAndPic p {
+    margin: 0;
+    font-size: .32rem;
+    color: #646464;
+    line-height: .55rem;
+}
+#test{
+	display:none;
+}

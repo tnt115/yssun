@@ -1,0 +1,68 @@
+#content {
+	padding: .2rem;
+}
+body{
+	background-color:#efeff4;
+}
+.top,.top_content{
+	font-size: .3rem;
+	color: #646464;
+	padding: .2rem .2rem 0 .2rem;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.top div:nth-child(1) {
+	border-bottom: 1px solid #ccc;
+	padding: .2rem 0;
+}
+#allStu,.ul_name{
+	padding: .2rem 0;
+}
+.ul_name li a {
+	color: #fff;
+	background-color: #00ACFF;
+	padding: .1rem .2rem;
+	border-radius: 4px;
+	position: relative;
+}
+
+.ul_name li a span {
+	position: absolute;
+	background-color: #f00;
+	width: .3rem;
+	height: .3rem;
+	line-height: .3rem;
+	display: inline-block;
+	text-align: center;
+	border-radius: 50%;
+	top: -4px;
+	right: -5px;
+}
+
+
+li.list_sort {
+	padding: .25rem 0 !important;
+    display: inline-block;
+    margin-left: .2rem;
+}
+.top_content{
+	margin-top: .3rem;
+}
+.top_content li a{
+	background: none;
+	color: #808080;
+	border: 1px solid #ccc;
+}
+.top_content li a span{
+	color: #fff;
+}
+#btn{
+	position: static;
+	margin-top: .6rem;
+}
+#errorMsg{
+	text-align: center;
+    padding: .5rem;
+    display:none;
+}

@@ -1,0 +1,63 @@
+.formbox-bd .text_padding{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+   /*  -webkit-line-clamp: 3;  */
+    -webkit-box-orient: vertical;
+    margin-bottom: .13rem;
+    padding: 0;
+    word-wrap: break-word;
+}
+.text_read a{
+	  font-size: .25rem;
+    display: inline-block;
+    height: .25rem;
+    line-height: .25rem;
+	color: #2A97CD;
+}
+.text_read{
+	    margin-bottom: .1rem;
+}
+.posted {
+    width: 100%;
+    padding: 0 .2rem;
+    text-align: center;
+}
+.posted div {
+    padding: .15rem 0;
+    background-color: #eee;
+    border-radius: 5px;
+}
+.posted div span {
+    display: inline-block;
+    font-size: 0.3rem;
+    color: #808080;
+    padding-left: 0.6rem;
+    background: url(../../../images/Secondpage/ClassStyle/release.png) left center no-repeat;
+    background-size: .4rem;
+}
+.mui-scroll-wrapper {
+    position: absolute;
+    z-index: 2;
+    top: 1.4rem;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+}
+.mui-table-view-chevron .mui-table-view-cell,.mui-table-view-cell{
+	padding: 0;
+}
+.mui-table-view-chevron>.mui-table-view-cell:not(:nth-child(1)){
+	padding-top: .4rem;
+}
+.mui-table-view-cell.mui-active,.mui-grid-view.mui-grid-9 .mui-table-view-cell.mui-active{
+	background: none;
+}
+.mui-pull-caption{
+	font-size: .3rem;
+	color: #646464;
+}
+#testVal{
+	display:none;
+}

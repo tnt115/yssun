@@ -1,0 +1,355 @@
+@CHARSET "UTF-8";
+body{
+	    font-size: 14px;
+}
+
+.mui-input-row label {
+	font-family: "微软雅黑";
+}
+
+.hm-description>li {
+	font-size: 14px;
+	color: #8f8f94;
+}
+
+.mui-control-content {
+	background-color: white;
+	min-height: 215px;
+	height: 100%;
+}
+
+.mui-control-content .mui-loading {
+	margin-top: 50px;
+}
+
+.mui-scroll-wrapper {
+	padding-top: 0px;
+}
+
+#item1mobile,#item2mobile {
+	border-bottom: none;
+}
+
+.mui-input-row,.scope,.mui-table-view {
+	border-bottom: 1px solid #ccc;
+}
+
+.weui-cell__bd {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.mui-input-group .mui-input-row {
+	border-bottom: none;
+}
+
+.mui-input-group>div:last-child:after,.mui-input-group:after {
+	height: 0px;
+}
+
+.mui-badge-purple,.mui-badge-royal {
+	background: none;
+	color: #ccc;
+}
+.mui-control-content{
+	 display:block;
+}
+.default {
+	padding: .5rem;
+	border: 1px solid #ccc;
+}
+
+.pic {
+	padding: 0px 15px;
+}
+
+#userCheckbox>li {
+	padding-right: 15px;
+}
+
+.mui-input-row input {
+	font-size: 15px;
+}
+
+#btn {
+	position: static;
+	margin-top: 30px;
+}
+
+#scroll1 {
+	overflow: scroll;
+}
+
+#scroll2 .mui-card {
+	box-shadow: none;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+#scroll2 .header_left_icon_content {
+	font-size: 12px;
+}
+
+#scroll2 .mui-card {
+	position: relative;
+	overflow: visible;
+	padding: 0 5px;
+}
+
+.header_left_icon {
+	position: relative;
+	display: inline-block;
+}
+
+.mui-card-header,.mui-card-footer {
+	padding: 5px;
+	min-height: 40px;
+}
+
+.header_left_icon_content {
+	background-color: #f00;
+	color: #fff;
+	padding: 2px 5px 2px 15px;
+	border-radius: 2px;
+	margin-left: -8px;
+	position: relative;
+}
+
+.header_left_icon_ {
+	width: 5px;
+	height: 5px;
+	background-color: #fff;
+	position: absolute;
+	left: 5px;
+	top: 8px;
+	border-radius: 5px;
+}
+
+.header_left_icon_:after {
+	position: absolute;
+	padding: 1px 5px;
+	display: inline-block;
+}
+
+.header_left_class,.header_right_date,.title_content {
+	font-size: 13px;
+}
+
+.header_left_class {
+	color: #27B5FF;
+}
+
+.operation .mui-btn {
+	font-size: 12px;
+	padding: 2px 6px;
+	margin-left: 5px;
+}
+
+.title_content {
+	max-width: 180px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.mui-content {
+	background-color: #fff;
+}
+/* 自定义科目样式 开始*/
+.custom_primary {
+	background-color: #27B5FF;
+}
+
+.custom_primary_b {
+	border: 1px solid #27B5FF !important;
+}
+
+.custom_success {
+	background-color: #4CD964;
+}
+
+.custom_success_b {
+	border: 1px solid #4CD964 !important;
+}
+
+.custom_warning {
+	background-color: #F0AD4E;
+}
+
+.custom_warning_b {
+	border: 1px solid #F0AD4E !important;
+}
+
+.custom_danger {
+	background-color: #DD524D;
+}
+
+.custom_danger_b {
+	border: 1px solid #DD524D !important;
+}
+
+.custom_royal {
+	background-color: #8A6DE9;
+}
+
+.custom_royal_b {
+	border: 1px solid #8A6DE9 !important;
+}
+
+.custom_meired {
+	background-color: #FF27C6;
+}
+
+.custom_meired_b {
+	border: 1px solid #920784 !important;
+}
+
+.custom_purple {
+	background-color: #920784;
+}
+
+.custom_purple_b {
+	border: 1px solid #920784 !important;
+}
+/* 自定义科目样式 结束*/
+#scroll2 {
+	margin-top: 134px;
+	position: absolute;
+	padding-bottom: 65px;
+}
+
+#mui-input-group {
+	display: none;
+}
+
+#picture a,#picture b {
+	color: #646464;
+	font-size: .3rem;
+	font-weight: 400;
+}
+
+#picture ul {
+	margin: 0;
+}
+
+#picture ul:nth-child(1) {
+	margin-bottom: 8px;
+}
+
+.mui-popover.mui-popover-action .mui-table-view .mui-table-view-cell:not
+	  (:nth-child(1)   ):after {
+	height: 0;
+}
+
+#picture {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.pic a {
+	display: inline-block;
+	margin-right: 1px;
+}
+
+.pic>img {
+	margin-right: 6px;
+}
+
+.mui-input-group_user {
+	display: none;
+}
+
+.mui-input-group_user .mui-collapse-content {
+	padding: 0 !Important;
+}
+
+.mui-input-group_user .mui-collapse-content>.mui-input-row {
+	border: none;
+}
+
+#seach {
+	bottom: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0 .3rem;
+	position: fixed;
+	z-index: 66;
+	background-color: #fff;
+}
+
+#seach button {
+	padding: 8px 0;
+	background-color: #00a8ff;
+	border: none;
+	border-radius: 8px;
+	transition: all 1s;
+}
+
+.mui-btn-block {
+	margin-top: 10px;
+}
+
+.mui-btn-primary {
+	border: 1px solid #ccc;
+	background-color: #ccc;
+}
+
+#JobtitleDiv {
+	float: right;
+	width: 65%;
+	margin-bottom: 0;
+	padding-left: 0;
+	border: 0;
+	padding-top: 8px;
+	min-height: 40px;
+	-webkit-user-modify: read-write-plaintext-only;
+	-webkit-user-select:text;
+}
+
+#weui-textareaDiv {
+	margin-bottom: 15px;
+	padding: 10px 15px;
+	-webkit-user-select: text;
+	outline: 0;
+	min-height: 100px;
+	-webkit-user-modify: read-write-plaintext-only;
+	background-color: #fff;
+}
+#weui-textareaDiv p{
+	    margin-bottom:0px;
+}
+
+#JobtitleDiv:empty:before,#weui-textareaDiv:empty:before {
+	content: attr(placeholder);
+	color: #bbb;
+}
+
+#JobtitleDiv:focus,#weui-textareaDiv:focus {
+	content: none;
+}
+.posted {
+    width: 100%;
+    padding: 0 .2rem;
+    text-align: center;
+}
+.posted div {
+    padding: .15rem 0;
+    background-color: #eee;
+    border-radius: 5px;
+}
+.posted div span {
+    display: inline-block;
+    font-size: 0.3rem;
+    color: #808080;
+    padding-left: 0.6rem;
+    background: url(../../../images/Secondpage/ClassStyle/release.png) left center no-repeat;
+    background-size: .4rem;
+}
+#slider{
+	position: relative;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+}
+#item2mobile{
+	    overflow-y: scroll;
+}

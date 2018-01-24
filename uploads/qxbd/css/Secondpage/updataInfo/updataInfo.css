@@ -1,0 +1,119 @@
+body {
+	background-color: #F0F0F0;
+}
+
+.mui-input-group .mui-input-row {
+	height: 1rem;
+	background-color: #fff;
+	margin-bottom: .3rem;
+	border-radius: 5px;
+	padding: 0 .3rem;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+}
+
+.mui-input-group {
+	background: none;
+}
+
+.mui-input-group .mui-input-row:after,.mui-input-group:after,.mui-input-group:before
+	{
+	height: 0;
+}
+
+.mui-input-row label {
+	font-family: "微软雅黑";
+	float: left;
+	width: 30%;
+	padding: 0;
+	font-size: .3rem;
+	color: #646464;
+	line-height: 1rem;
+}
+
+.mui-input-row label ~input,.mui-input-row label ~select,.mui-input-row label
+	~textarea {
+	width: 70%;
+	font-size: .3rem;
+}
+
+input[type=text] {
+	height: 1rem;
+	line-height: 1rem;
+}
+
+#content {
+	padding: .5rem;
+}
+
+#btn {
+	position: static;
+	margin-top: .5rem;
+	padding: 0;
+}
+
+.leave {
+	background-color: #fff;
+	padding: .3rem;
+	border-radius: 5px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.leave p {
+	font-size: .3rem;
+	margin-top: 0;
+	margin-bottom: .3rem;
+	color: #646464;
+}
+
+.leave textarea {
+	padding: 0;
+	font-size: .3rem;
+	text-indent: 1.7rem;
+}
+
+.leave .individuality {
+	position: absolute;
+	width: 30%;
+}
+
+.info_label {
+	height: 100%;
+}
+
+.info_div .info_label {
+	width: 25% !important;
+}
+
+.info_div input {
+	width: 75% !important;
+}
+
+#info {
+	position: relative;
+}
+
+#info .info_img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 66;
+	border-radius: 50%;
+	height: 1rem;
+	width: 1rem;
+	background-color: #fff;
+}
+
+.info_div {
+	width: 95%;
+	left: 5%;
+}
+
+#info,#pwd,#btn {
+	display: none;
+}
+
+input[type=password] {
+	height: 50px
+}

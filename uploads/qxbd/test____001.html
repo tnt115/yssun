@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title id="pageTitle"></title>
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link rel="stylesheet" href="css/weui.min.css" />
+
+<style >
+	#btn {
+	margin-top: 10px;
+	position: fixed;
+	width: 100%;
+	margin: 0;
+	padding: 0 .3rem;
+}
+
+#btn button {
+	margin-top: 20px;
+	padding: 8px 0;
+	background-color: #00a8ff;
+	border: none;
+	border-radius: 8px;
+	transition: all 1s;
+}
+	
+</style>
+	</head>
+
+	<body>
+		 <header class="mui-bar mui-bar-nav">
+		     <h1 class="mui-title mui-title_name">情绪表达</h1>
+		  </header>
+		  <div class="mui-content" id="mui-content">
+				<ul class="mui-table-view item_template">
+					 <li class="mui-table-view-cell">
+						 	<audio src="{{items.serverSubUrl}}{{item.url}}" controls="controls"></audio>
+							aaaaaa
+					</li>
+				</ul>
+				
+		 </div>
+		
+			<!-- 用于测试数据的 -->
+		<div id="testVal">
+		 
+		 	 
+		 	<!--HTML模板-->
+		<script id="home-template" type="text/html">
+					{{each items.data item}}
+					 <li class="mui-table-view-cell">
+					 	
+					 	<audio controls="controls" >
+						   <source src="{{items.serverSubUrl}}{{item.url}}" type="audio/mp3" />
+						</audio>
+						 	
+							{{item.title}}
+					</li>
+				 
+				{{/each}}
+		</script>
+		 
+		</div>
+		
+		
+		
+		
+		<div class="weui-footer" style="display:none">
+            <p class="weui-footer__links">
+                <a href="javascript:void(0);" class="weui-footer__link"></a>
+            </p>
+            <p class="weui-footer__text"></p>
+        </div>
+        
+		 
+		<script type="text/javascript" src="js/mui.min.js" ></script>
+		<script src="js/jquery-3.1.1.js"></script>
+		<script src="js/base.js"></script>
+		<script src="js/template-web.js"></script>
+		<script src="js/Secondpage/detailed/task_mp3.js"></script>
+		
+	</body>
+
+</html>

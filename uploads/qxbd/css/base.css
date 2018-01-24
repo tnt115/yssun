@@ -1,0 +1,661 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+.mui-scroll-wrapper{
+	    padding-top: 10px;
+}
+body,#bottom{
+	max-width: 768px;
+	width: 100%;
+	margin: 0 auto;
+}
+body {
+	font-family: "微软雅黑" !important;
+	background-color: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+li,
+ol {
+	list-style: none;
+}
+.mui-table-view:before,.mui-table-view:after{
+	height: 0;
+}
+.mui-bar-tab{
+	height: 1rem !important;
+}
+.clearFix:after {
+	content: "";
+	height: 0;
+	overflow: hidden;
+	display: block;
+	clear: both;
+}
+.mui-scroll-wrapper{
+	    background-color: #fff !Important;
+}
+.socrllHide {
+	overflow: hidden;
+}
+.all_header,.header{
+	display: none;
+}
+
+.onsrcoll{
+	overflow:hidden;
+}
+#scale {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	display: none;
+	background-color: rgba(25, 23, 23, 0.72);
+	display: none;
+	line-height: 500px;
+	text-align: center;
+}
+
+#scale img {
+	display: inline-block;
+	vertical-align: middle;
+}
+.formbox-bd .text_padding{
+	max-height: 150px;
+	overflow: hidden;
+}
+
+/* 正在加载中的动画 开始*/
+#bigGround{
+	overflow: hidden;
+	display:none;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+#loadingdiv {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: .2rem;
+}
+#loadingdiv img{
+	vertical-align: middle;
+	margin-right: .2rem;
+	    width: .8rem;
+    height: .8rem;
+}
+#loadingdiv_word{
+	color: #323232;
+	font-size: .3rem;
+}
+/* 正在加载中的动画结束*/
+.formbox-bd .text .name,
+.formbox-bd .text .time,
+.formbox-bd .text_title {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.header_left,
+.header_right,
+.grade,
+.Class,
+.btn {
+	float: left;
+}
+
+.grade span,
+.Class span,
+.header_right span {
+	color: #808080;
+}
+
+.grade,
+.Class,
+.btn {
+	position: relative;
+	display: inline-block;
+	width: 1.7rem;
+	text-align: center;
+	line-height: 0.4rem;
+	box-sizing: border-box;
+	top: 6px;
+}
+
+.btn {
+	width: .7rem;
+	height: .6rem;
+	background: url(../images/Secondpage/ClassStyle/search.png) center no-repeat;
+	background-size: .5rem .5rem;
+	padding: 0;
+	border-left: 1px solid #ccc;
+	position: relative;
+	top: 1px;
+}
+
+.grade span,
+.Class span {
+	display: inline-block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 100%;
+}
+
+.header_right a img {
+	width: .5rem;
+	height: .5rem;
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	top: 50%;
+	margin-top: -12px;
+}
+
+.header_left {
+	background-color: #eee;
+	padding: 5px 10px;
+	border-radius: 60px;
+	position: relative;
+	z-index: 666;
+	height: .84rem;
+}
+
+.header {
+	padding: 0 .2rem;
+	font-size: .3rem;
+}
+
+.grade_ui,
+.Class_ui {
+	position: absolute;
+	color: #808080;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 0 .7rem;
+	font-size: .3rem;
+	border-radius: 10px;
+	height: 4rem;
+	overflow-y: scroll;
+	width: 2.1rem;
+	text-align: center;
+	box-shadow: -2px 3px 20px #ccc;
+	width: 4rem;
+	top: .5rem;
+	box-sizing: border-box;
+	z-index: 666;
+}
+
+#content {
+	padding-top: .2rem;
+}
+
+.header_right {
+	margin-left: 5%;
+}
+
+.header_right a {
+	display: inline-block;
+	border-radius: 60px;
+	position: relative;
+	width: 2rem;
+	height: .84rem;
+	line-height: .84rem;
+	text-align: right;
+	padding: 0 .4rem;
+	background: url(../images/Secondpage/ClassStyle/release.png) .4rem center no-repeat;
+	background-size: .5rem .5rem;
+	background-color: #eee;
+}
+
+.header_right a img {
+	left: 20px;
+	top: 50%;
+}
+
+.header a:active {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.grade_ui li,
+.Class_ui li {
+	padding: .15rem .2rem;
+	border-bottom: 1px solid #ccc;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.arr-top {
+	position: absolute;
+	z-index: 667;
+	top: .21rem;
+	left: .5rem;
+}
+
+.msg {
+	display: none;
+	position: relative;
+}
+
+
+/*按钮样式*/
+
+#btn {
+	position: fixed;
+	bottom: .3rem;
+	width: 100%;
+	margin: 0;
+	padding: 0 .3rem;
+}
+
+#btn button {
+	padding: 8px 0;
+	background-color: #00a8ff;
+	border: none;
+	border-radius: 8px;
+	transition: all 1s;
+}
+
+#btn button:active {
+	background-color: #0974ab;
+}
+
+
+/*动态样式开始*/
+
+.formbox-bd .pic {
+	float: left;
+}
+
+.formbox-bd .pic>img {
+	width: 1rem;
+	height: 1rem;
+border-radius: 50%;
+
+}
+
+.formbox-bd .text {
+	margin-left: 1.2rem;
+}
+
+.formbox-bd .text .name {
+	font-size: .35rem;
+	color: #323232;
+	margin-bottom: .1rem;
+	height: .35rem;
+	line-height: .35rem;
+}
+
+.formbox-bd .text .time {
+	font-size: .3rem;
+	color: #808080;
+	margin-bottom: .1rem;
+    height: .31rem;
+    line-height: .31rem;
+}
+
+.formbox-bd .text_title {
+	color: #646464;
+	font-size: .3rem;
+	margin-bottom: .1rem;
+    height: .31rem;
+    line-height: .31rem;
+}
+
+.text_content {
+	font-size: .3rem;
+	color: #646464;
+}
+
+.text_padding {
+	padding-bottom: .1rem;
+	font-size: .35rem;
+	color: #808080;
+}
+
+.formbox-bd {
+	padding: 0 15px;
+}
+
+.text_pic {
+	/*display: -webkit-flex;
+		display: flex;*/
+	margin-bottom: .15rem;
+}
+
+.mui-grid-view.mui-grid-9,
+.mui-grid-view.mui-grid-9 .mui-table-view-cell{
+	border: none;
+	background: none;
+}
+
+.mui-grid-view.mui-grid-9 .mui-table-view-cell {
+	padding: 0;
+	padding-bottom: 10px;
+	padding-right: .15rem;
+}
+
+.text_pic>li {
+	flex: 1;
+}
+
+.text_pic>li img {
+	width: 100%;
+    display: -webkit-box;
+	height:auto; 
+}
+
+.content_body_ul>li {
+	border-bottom: 1px solid #ccc;
+	margin-top: .4rem;
+}
+.text_read {
+    margin-bottom: .2rem !important;
+}
+.text_read a {
+    font-size: .25rem;
+    display: inline-block;
+    height: .25rem;
+    line-height: .25rem;
+    color: #2A97CD;
+    margin-right: .3rem;
+}
+
+/*动态样式结束*/
+
+
+/*自定义checkbox按钮*/
+
+.div_checkbox {
+	position: relative;
+}
+
+.div_checkbox input {
+	width: 16px;
+	height: 16px;
+}
+
+.lab_checkbox {
+	top: 4px;
+	left: 0px;
+	background: url(../images/Secondpage/ClassStyle/selectNormal.png) 0 3px no-repeat;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 400;
+	padding-left: 20px;
+	min-height: 16px;
+	min-width: 16px;
+	color: #646464;
+}
+
+.ggtoleback {
+	background: url(../images/Secondpage/ClassStyle/selectPress.png) 0 3px no-repeat;
+}
+
+.div_checkbox input {
+	opacity: 0;
+	position: absolute;
+	z-index: 9;
+	top: 3px;
+}
+
+
+/*自定义checkbox结束按钮*/
+
+/*图片预览样式开始*/
+	.mui-preview-image.mui-fullscreen {
+		position: fixed;
+		z-index: 667;
+		background-color: #000;
+	}
+	
+	.mui-preview-header,
+	.mui-preview-footer {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		z-index: 10;
+	}
+	
+	.mui-preview-header {
+		height: 44px;
+		top: 0;
+		text-align: center;
+	}
+	
+	.mui-preview-footer {
+		height: 50px;
+		bottom: 0px;
+	}
+	
+	.mui-preview-header .mui-preview-indicator {
+		display: inline-block;
+		line-height: 44px;
+		color: #fff;
+		text-align: center;
+		margin: 15px auto 4;
+		width: 70px;
+		border-radius: 12px;
+		font-size: 16px;
+	}
+	
+	.mui-preview-image {
+		display: none;
+		-webkit-animation-duration: 0.5s;
+		animation-duration: 0.5s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+	
+	.mui-preview-image.mui-preview-in {
+		-webkit-animation-name: fadeIn;
+		animation-name: fadeIn;
+	}
+	
+	.mui-preview-image.mui-preview-out {
+		background: none;
+		-webkit-animation-name: fadeOut;
+		animation-name: fadeOut;
+	}
+	
+	.mui-preview-image.mui-preview-out .mui-preview-header,
+	.mui-preview-image.mui-preview-out .mui-preview-footer {
+		display: none;
+	}
+	
+	.mui-zoom-scroller {
+		position: absolute;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		-webkit-backface-visibility: hidden;
+	}
+	
+	.mui-zoom {
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+	}
+	
+	.mui-slider .mui-slider-group .mui-slider-item img {
+		width: auto;
+		height: auto;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	
+	.mui-android-4-1 .mui-slider .mui-slider-group .mui-slider-item img {
+		width: 100%;
+	}
+	
+	.mui-android-4-1 .mui-slider.mui-preview-image .mui-slider-group .mui-slider-item {
+		display: inline-table;
+	}
+	
+	.mui-android-4-1 .mui-slider.mui-preview-image .mui-zoom-scroller img {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	
+	.mui-preview-loading {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		display: none;
+	}
+	
+	.mui-preview-loading.mui-active {
+		display: block;
+	}
+	
+	.mui-preview-loading .mui-spinner-white {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -25px;
+		margin-top: -25px;
+		height: 50px;
+		width: 50px;
+	}
+	
+	.mui-preview-image img.mui-transitioning {
+		-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+		transition: transform 0.5s ease, opacity 0.5s ease;
+	}
+	
+	//重写mui遮罩蒙版开始
+			.mui-backdrop {
+				position: fixed;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: 998;
+				background-color: rgba(0, 0, 0, .1);
+			}
+			
+			.mui-backdrop_user:after {
+				content: "";
+				background: url(../images/loading-2.gif) 0 0 no-repeat;
+				display: block;
+				width: 32px;
+				height: 32px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -16px;
+				margin-top: -16px;
+			}
+	//重写mui遮罩蒙版结束
+	@-webkit-keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	
+	@-webkit-keyframes fadeOut {
+		0% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+	
+	@keyframes fadeOut {
+		0% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+	
+	p img {
+		max-width:100% !Important;
+		height: auto;
+	}
+/*图片预览样式结束*/
+/* 错误提示按钮样式开始 */
+.mui-popup{
+	    width: 5.5rem;
+}
+.mui-popup-title+.mui-popup-text{
+	    margin: .2rem 0 0;
+}
+/* 错误提示按钮样式 结束*/
+
+/* 小三角修复 开始*/
+
+
+@media(width:320px) {
+	.arr-top{
+		top: .22rem;
+	}
+}
+ @media(min-width: 340px) and (max-width:359px){
+ 	.arr-top{
+		top: .22rem;
+	}
+ }
+ @media(min-width: 360px) and (max-width:364px){
+ 	.arr-top{
+		top: .23rem;
+	}
+ }
+
+@media(min-width: 365px) and (max-width: 373px) {
+	.arr-top{
+		top: .24rem;
+	}
+} 
+@media (min-width: 374px) and (max-width: 425px) {
+	.arr-top{
+		top: .22rem;
+	}
+}
+/* 小三角修复 结束*/
+
+.weui-footer__text,.weui-footer__link{
+	    font-size: .3rem;
+}
+.weui-footer{
+		    margin-top: 1.5rem;
+}

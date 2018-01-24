@@ -1,0 +1,146 @@
+.socrllHide {
+	overflow: hidden;
+}
+
+#loader {
+	position: fixed;
+	top: 0px;
+	z-index: 101;
+ 	width: 100%;
+	height: 100%; 
+	display: none;
+}
+
+.loader {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	width: 105px;
+	height: 80px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.66);
+	border-radius: 4px;
+	z-index: 101;
+}
+
+.loader span {
+	display: inline-block;
+	background: #1777da;
+	width: 3px;
+	height: 5%;
+	border-radius: 14px;
+	margin-right: 4px;
+	float: left;
+	margin-top: 25%;
+}
+
+.loader span:last-child {
+	margin-right: 0px;
+}
+
+.loader span:nth-child(1) {
+	animation: load 2.5s 1.4s infinite linear;
+	-webkit-animation: load 2.5s 1.4s infinite linear;
+}
+
+.loader span:nth-child(2) {
+	animation: load 2.5s 1.2s infinite linear;
+	-webkit-animation: load 2.5s 1.2s infinite linear;
+}
+
+.loader span:nth-child(3) {
+	animation: load 2.5s 1s infinite linear;
+	-webkit-animation: load 2.5s 1s infinite linear;
+}
+
+.loader span:nth-child(4) {
+	animation: load 2.5s 0.8s infinite linear;
+	-webkit-animation: load 2.5s 0.8s infinite linear;
+}
+
+.loader span:nth-child(5) {
+	animation: load 2.5s 0.6s infinite linear;
+	-webkit-animation: load 2.5s 0.6s infinite linear;
+}
+
+.loader span:nth-child(6) {
+	animation: load 2.5s 0.4s infinite linear;
+	-webkit-animation: load 2.5s 0.4s infinite linear;
+}
+
+.loader span:nth-child(7) {
+	animation: load 2.5s 0.2s infinite linear;
+	-webkit-animation: load 2.5s 0.2s infinite linear;
+}
+
+.loader span:nth-child(8) {
+	animation: load 2.5s 0s infinite linear;
+	-webkit-animation: load 2.5s 0s infinite linear;
+}
+
+.loader span:nth-child(9) {
+	animation: load 2.5s 0.2s infinite linear;
+	-webkit-animation: load 2.5s 0.2s infinite linear;
+}
+
+.loader span:nth-child(10) {
+	animation: load 2.5s 0.4s infinite linear;
+	-webkit-animation: load 2.5s 0.4s infinite linear;
+}
+
+.loader span:nth-child(11) {
+	animation: load 2.5s 0.6s infinite linear;
+	-webkit-animation: load 2.5s 0.6s infinite linear;
+}
+
+.loader span:nth-child(12) {
+	animation: load 2.5s 0.8s infinite linear;
+	-webkit-animation: load 2.5s 0.8s infinite linear;
+}
+
+.loader span:nth-child(13) {
+	animation: load 2.5s 1s infinite linear;
+	-webkit-animation: load 2.5s 1s infinite linear;
+}
+
+.loader span:nth-child(14) {
+	animation: load 2.5s 1.2s infinite linear;
+	-webkit-animation: load 2.5s 1.2s infinite linear;
+}
+
+.loader span:nth-child(15) {
+	animation: load 2.5s 1.4s infinite linear;
+	-webkit-animation: load 2.5s 1.4s infinite linear;
+}
+
+@keyframes load {
+	0% {
+		background: #299bb5;
+		margin-top: 25%;
+		height: 10%;
+	}
+	50% {
+		background: #1777da;
+		height: 70%;
+		margin-top: 0%;
+	}
+	100% {
+		background: #299bb5;
+		height: 10%;
+		margin-top: 25%;
+	}
+}
+
+#textWarn {
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    color: #000;
+    font-weight: bold;
+    color: #fff;
+    left: 50%;
+    margin-left: -42.5px;
+}

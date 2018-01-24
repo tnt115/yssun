@@ -1,0 +1,113 @@
+#content {
+	padding: .2rem;
+	background-color: #eee;
+}
+body{
+	    background-color: #eee;
+}
+
+.mui-input-group {
+	background: none;
+}
+
+.mui-input-group:before,
+.mui-input-group .mui-input-row:after,
+.mui-input-group:after {
+	height: 0
+}
+
+.mui-input-row label {
+	font-family: "微软雅黑";
+	float: left;
+	width: 20%;
+	padding: 0;
+	font-size: .3rem;
+	color: #646464;
+	line-height: 1rem;
+}
+
+.mui-input-group .mui-input-row {
+	height: 1rem;
+	background-color: #fff;
+	margin-bottom: .3rem;
+	border-radius: 5px;
+	padding: 0 .3rem;
+	box-sizing: border-box;
+}
+
+.mui-input-row label~input,
+.mui-input-row label~select,
+.mui-input-row label~textarea {
+	width: 80%;
+	font-size: .3rem;
+}
+
+input[type=text] {
+	height: 1rem;
+	line-height: 1rem;
+}
+.leave {
+    background-color: #fff;
+    padding: .3rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.leave p{
+	font-size: .3rem;
+    margin-top: 0;
+    margin-bottom: .3rem;
+    color: #646464;
+}
+textarea {
+	padding: 0;
+	font-size: .3rem;
+}
+.pic {
+    margin-top: .2rem;
+    margin-bottom: .1rem;
+}
+.default {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.mui-grid-view.mui-grid-9 .mui-table-view-cell.mui-active{
+	background: none;
+}
+#picture a,#picture b{
+    color: #646464;
+    font-size: .3rem;
+    font-weight: 400;
+}
+#picture ul{
+	margin: 0;
+}
+#picture ul:nth-child(1){
+	margin-bottom: 8px;
+}
+.mui-popover.mui-popover-action .mui-table-view .mui-table-view-cell:not(:nth-child(1)):after{
+	height: 0;
+}
+#picture {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+.pic{
+	margin-top: .2rem !important;
+    margin-bottom: .1rem !important;
+}
+.pic a{
+	display: inline-block;
+	margin-right: 6px;
+}
+.pic>img{
+	margin-right: 5px;
+}
+#btn{
+	position: static;
+    margin-top: 1rem;
+}
+#drop{
+	float: right;
+    position: relative;
+    top: 8px;
+    right: 25px;
+}

@@ -1,0 +1,127 @@
+.check_user {
+	padding: .1rem .5rem;
+	border-bottom: 1px solid #ccc;
+	font-size: .3rem;
+	    color: #646464;
+}
+
+.check_user_left img {
+	width: .8rem;
+	height: .8rem;
+	vertical-align: middle;
+	margin-right: .2rem;
+	border-radius: 50%;
+}
+
+.check_user_left {
+	float: left;
+}
+
+.check_user_right {
+	float: right;
+	position: relative;
+	    margin-right: 15px;
+}
+
+.check_user_right span {
+	line-height: .8rem;
+}
+.mui-navigate-right:after, .mui-push-left:after, .mui-push-right:after{
+    top: .4rem;
+    left: 1.8rem;
+}
+
+#calendar{
+	padding: .1rem .5rem;	
+}
+#calendar table{
+	width: 100%;
+	position: relative;
+}
+#calendar th,#calendar td{
+	width: 14.3%;
+	font-weight: 300;
+	color: #808080;
+	font-size: .3rem;
+	padding-bottom: .3rem;
+	text-align: center;
+}
+
+  #calendar td span{
+	display: inline-block;
+    border-radius: 50%;
+    width: .8rem;
+    height: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    transition: all 1s;
+  }
+  .normal{
+  	 border: 1px solid #00aaff;
+  }
+  .lack{
+  	 border: 1px solid #ff1800;
+  }
+  .errors{
+  	 border: 1px solid #bbbbbb;
+  	 color: #808080 !important;
+  }
+.state{
+	color: #808080;
+	font-size: .3rem;
+	text-align: right;
+}
+.state b{
+    width: .3rem;
+    height: .3rem;
+    display: inline-block;
+    margin-right: .1rem;
+    position: relative;
+    top: .05rem;
+}
+.state span:not(:last-child){
+	margin-right: .2rem;
+}
+.state span:nth-child(1) b{
+	background-color: #00aaff;
+}
+.state span:nth-child(2) b{
+	background-color: #ff1800;
+}
+.state span:nth-child(3) b{
+	background-color: #bbbbbb;
+}
+.totle{
+	height: 1rem;
+	line-height: 1rem;
+	border-bottom: 1px solid #808080;
+	border-top: 1px solid #808080;
+	text-align: center;
+	background-color: #EEEEEE;
+	color: #646464;
+	font-size: .35rem;
+}
+.mui-table-view li a{
+	padding-left: .5rem !important;
+	padding-right: .5rem !important;
+	font-size: .35rem;
+}
+.slotCard{
+	color: #323232;
+}
+.data{
+	margin-left: .2rem;
+	color: #808080;
+}
+.mui-table-view-cell:after,.mui-table-view:after{
+	height: 0;
+}
+.mui-table-view li{
+	border-bottom: 1px solid #ccc;
+}
+.mui-table-view-cell .mui-active{
+	background:none !Important;
+}
+.future{
+	color: #000;
+}

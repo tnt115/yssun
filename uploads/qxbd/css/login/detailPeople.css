@@ -1,0 +1,88 @@
+p {
+	margin: 0;
+}
+
+.header {
+	background: url(../../images/login/login_bg-.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	padding: .5rem;
+	box-sizing: border-box;
+	display: block;
+}
+
+.people_header {
+	display: flex;
+	display: -webkit-flex;
+	margin-bottom: .5rem;
+}
+
+.people_header:first-child {
+	margin-top: 2rem;
+}
+
+.people_header:last-child {
+	margin-bottom: 0;
+}
+
+.people_header>li {
+	flex: 1;
+	overflow: hidden;
+	text-align: center;
+}
+
+.people_header>li a {
+	display: inline-block;
+}
+
+.people_header p {
+	text-align: center;
+	color: #fff;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.people_name {
+	font-size: .35rem;
+}
+
+.people_adress {
+	font-size: .3rem;
+}
+
+#slider .people_header_img img {
+	width: 2rem;
+	height: 2rem;
+}
+p img{
+	width: 2.5rem;
+    border-radius: 50%;
+}
+
+
+
+/* 
+#item1mobile,#item2mobile,#item3mobile{
+	background: none;
+}
+.mui-control-content .mui-loading {
+	margin-top: 50px;
+}
+
+.hm-description>li {
+	font-size: 14px;
+	color: #8f8f94;
+}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
+	border: none;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	color: #fff;
+}
+.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar{
+	background-color: #fff;
+}
+.mui-scroll-wrapper{
+	background:none !important
+	
+} */

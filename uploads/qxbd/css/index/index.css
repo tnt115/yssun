@@ -1,0 +1,232 @@
+body {
+    margin-bottom: 1.1rem;
+}
+
+#content{
+	padding: 0;
+}
+.mui-slider-indicator .mui-indicator {
+	display: inline-block;
+	width: 20px;
+	height: 6px;
+	margin: 1px 6px;
+	cursor: pointer;
+	border-radius: 3px;
+	background: #ccc;
+	box-shadow: none;
+}
+#bottom{
+	z-index: 66;
+	display: none;
+}
+.mui-slider-indicator .mui-active.mui-indicator {
+	background: #1fdd67;
+}
+
+.user_a {
+	display: inline-block;
+	width: 100%;
+    height: 1.5rem;
+    position: relative;
+}
+
+.user_name {
+    position: absolute;
+    top: 0.2rem;
+    color: #323232;
+}
+
+#head-img {
+    width: 1.3rem;
+    height: 1.3rem;
+    vertical-align: middle;
+    margin-right: .4rem;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    margin-top: -.65rem;
+    z-index: 66;
+    box-shadow: 0 3px 10px #ccc;
+}
+.user_Class{
+    position: absolute;
+    top: 0.8rem;
+    font-size: .25rem;
+    color: #888;
+}
+#footer-href img{
+	width: .6rem;
+    height: .6rem;
+   	margin-bottom: .1rem;
+	
+}
+#footer-href .last.mui-active{
+	background: none !important
+}
+.user {
+	padding: 0 3%;
+}
+.mui-bar-tab img{
+	width: .4rem;
+    height: .4rem;
+}
+.mui-bar-tab .mui-tab-label{
+	font-size: .3rem;
+}
+.mui-bar-tab .mui-bar_img{
+	position: relative;
+    top: .1rem;
+	
+}
+
+.mui-grid-view.mui-grid-9 .mui-table-view-cell,
+.mui-grid-view.mui-grid-9 {
+	background: none;
+}
+
+.mui-grid-view.mui-grid-9 .mui-table-view-cell {
+	padding: 0px 15px;
+}
+
+.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
+	margin-top: 0;
+	color: #fff;
+}
+.mui-bar{
+	background-color: #fff;
+}
+
+#footer-href .mui-media-body{
+	color: #808080;
+}
+.mui-grid-view.mui-grid-9 .mui-table-view-cell{
+	    border-right: 1px solid #eee;
+   		 border-bottom: 1px solid #eee;
+}
+.mui-grid-view.mui-grid-9{
+	border: none;
+	border-top: 1px solid #eee;
+}
+#bottom .mui-badge,#Sudoku .mui-badge{
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    background-color: #f00;
+    color: #fff;
+    padding: 0;
+    width: .2rem;
+    height: .2rem;
+    margin-left: 2px;
+    z-index: 666;
+}
+#Sudoku li a{
+	position: relative;
+}
+#Sudoku .mui-badge{
+    top: 0.3rem;
+    margin-left: .3rem;
+}
+/*我的样式开始*/
+.my_header{
+    height: 5rem;
+    background: url(../../images/my/mine-bg.png) 0 -.25rem no-repeat;
+    background-size: 100% 100%;
+}
+.my_header_content{
+	text-align: center;
+	 padding-top: .4rem;
+}
+.my_header_content p img{
+	    height: 1.5rem;
+    width: 1.5rem;
+   border-radius: 50%;
+}
+.my_header_content p {
+	margin: 0;
+	font-size: .4rem;
+	color: #fff;
+    margin-bottom: .1rem;
+}
+.my_header_content p:nth-child(3){
+	font-size: .3rem;
+}
+.my_body>ul{
+	margin-bottom: .3rem;
+}
+.my_body>ul:last-child{
+	margin-bottom: 0;
+}
+.my_body>ul a{
+	font-size: .3rem;
+	color: #646464 !important;
+}
+.my_body{
+	margin-top: 1rem;
+}
+/*我的样式结束*/
+
+
+/*消息样式开始*/
+#message .mui-media-body{
+	font-size: .3rem;
+}
+#message .mui-ellipsis{
+	font-size: .25rem;
+}
+/*消息样式结束*/
+.userHeard{
+	 border-radius: 50%;
+    width: 1rem;
+}
+.mui-bar-tab .mui-tab-item .mui-icon~.mui-tab-label{
+	font-size:13px;
+}
+#p_homework,#school_notice,#School_news,#msg_badge{
+	display:none;
+}
+			
+			#middlePopover {
+				height: 200px;
+				position: absolute;
+				top: 50% !important;
+				left: 50% !important;
+				margin-left: -140px;
+				margin-top: -120px;
+				border-top-left-radius: 0px;
+				border-top-right-radius: 0px;
+			}
+			
+			.mui-popover .mui-popover-arrow {
+				width: 0px;
+				height: 0px;
+			}
+			
+			.mui-popover .mui-table-view {
+				background: none;
+			}
+			
+			#middlePopover_heard{
+ 			width: 100%;
+			position: absolute;
+			top: -41px;
+			padding: 10px;
+			text-align: center;
+			background-color: #01ABFE;
+			border-top-left-radius: 7px;
+			border-top-right-radius: 7px;
+			color: #fff;
+		}
+			.mui-popover .mui-scroll-wrapper{
+				margin: 0;
+			}
+			#middlePopover .mui-icon{
+				font-weight: bold;
+    			display: inline-block;
+    			margin-right: 20px;
+			}
+			.mui-backdrop{
+				background-color: rgba(0, 0, 0, .8);
+			}
+			.mui-scroll-wrapper{
+				padding-top: 0px;
+			}
