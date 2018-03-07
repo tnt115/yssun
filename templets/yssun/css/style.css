@@ -17,7 +17,7 @@ a:hover{ text-decoration:none; color:#000;}
 .header .head .left{width:750px;padding-top:20px;float:left;}
 .header .head .right{width:230px;padding-top:20px;float:left;}
 
-.nav{height:45px;margin:0px auto;background:url(../images/nav_bg.gif) repeat-x 0 0;color:#fff;font-weight:bold;}
+.nav{width:980px;height:45px;margin:0px auto;background:url(../images/nav_bg.gif) repeat-x 0 0;color:#fff;font-weight:bold;}
 .nav .navul{width:980px;margin:0px auto;background:url(../images/nav_bg.gif) repeat-x 0 0;}
 .nav .navul ul{height:45px;line-height:45px;}
 .nav .navul ul li{float:left;padding:0px 28px;}
@@ -60,7 +60,7 @@ a:hover{ text-decoration:none; color:#000;}
 
 /*banner*/
 
-.banner{ width:100%; margin:0 auto;}
+.banner{ width:980px; margin:0 auto;}
 
 .banners{position:relative;height:490px;overflow:hidden;width:100%;}
 .banners .show{width:2500px;position:absolute;left:50%;top:0px;margin-left:-1250px;height:490px;overflow:hidden;}
@@ -234,7 +234,7 @@ a:hover{ text-decoration:none; color:#000;}
 /* main_n */
 
 
-.banner0{width:1280px;margin:0px auto;}
+.banner0{width:980px;margin:0px auto;}
 .main_n{width:980px;margin:0px auto;margin-top:10px;}
 .main_n .nleft{width:212px;margin-right:30px;margin-bottom:50px;float:left;}
 .main_n .nleft .cates{font-size:14px;}
