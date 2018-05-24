@@ -1,1268 +1,138 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0040)http://book.ciming.com/onlineReport.html -->
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0083)http://book.ciming.com/getReportInfo.html?filename=MTE30C2EU01DDH4QEDLHLIVH5UO9S248 -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="慈铭体检,在线预约,报告查询,健康管理">  
 <meta name="keywords" content="慈铭体检,在线预约,报告查询,健康管理">
 <meta name="robots" content="all">
-<meta http-equiv="X-UA-Compatible" content="edge">
-<title>体检结果 </title> 
-
-
-<link href="./mama_files/mall.css" rel="stylesheet" type="text/css">
-
-<link href="./mama_files/style.css" rel="stylesheet" type="text/css">
-<link href="./mama_files/common_new.css" rel="stylesheet" type="text/css">
-<link href="./mama_files/widget.css" rel="stylesheet" type="text/css">
-<link href="./mama_files/zzsc.css" rel="stylesheet" type="text/css">
-<link href="./mama_files/base.css" rel="stylesheet" type="text/css">
-<link href="./mama_files/user.base.2012.css" rel="stylesheet" type="text/css">
-<link href="./mama_files/user.safe.2011.css" rel="stylesheet" type="text/css">
-<link href="./mama_files/order.css" rel="stylesheet" type="text/css">
-
-<script type="text/javascript" src="./mama_files/jquery-1.8.0.js.下载"></script>	
-<script type="text/javascript" src="./mama_files/webtool.js.下载"></script>	
-<script type="text/javascript" src="./mama_files/popdiv.js.下载"></script>	
-
-<script type="text/javascript" src="./mama_files/page_index.js.下载"></script>	
-
- <script type="text/javascript" src="./mama_files/jsMD5.js.下载"></script> 
- <script type="text/javascript" src="./mama_files/main.js.下载"></script>
- <!-- 解决IE9兼容和个别360浏览器不兼容的js（正式环境）     由于引入该文件，导致ie9兼容模式无法在我的报告中正常添加报告（测试环境）-->
-<script type="text/javascript" src="./mama_files/json2.js.下载"></script>
-<!-- 解决firefox和IE无法添加报告的问题  TypeError: $(...).ajaxSubmit is not a function-->
-<script type="text/javascript" src="./mama_files/jquery-form.js.下载"></script>
- 
+<title>预约方式 </title> 	
 </head>
 
 <body>
-<!---------顶部登录信息-------start --->
-
-<div class="cus_top">
-	
-<!--遮罩层的css和js文件-->
-<link rel="stylesheet" href="./mama_files/showLoading.css" type="text/css">
-<script type="text/javascript" src="./mama_files/jquery.showLoading.js.下载"></script>
-<link rel="stylesheet" href="./mama_files/header.css" type="text/css">
-
-<script type="text/javascript">
-function logout(){
-	  window.location.href="http://book.ciming.com/logout.html";
-	}
-	
-	$(function() {
-		
-$('.service li').hover(function() {
-	$('ul', this).slideDown(1);
-	$(this).children('a:first').addClass("hov");
-
-}, function() {
-	$('ul', this).slideUp(1);
-	$(this).children('a:first').removeClass("hov");		
-});
-
-	});
-</script>
-<div id="divLayer">
-</div>
-
-<div class="top">
-	<div class="top_con">
-    	<table width="560" border="0" cellspacing="0" cellpadding="0" align="right" style="line-height:30px;white-space: nowrap;overflow: visible;">
-		  <tbody><tr>
-			<td id="usershow">
-					</td><td class="light_color" id="showlogout"> <a href="http://book.ciming.com/login.html" title="登录">登录</a>&nbsp;&nbsp; 
-		     <span style="color:#b7b6b6;">|</span>&nbsp;&nbsp;<a href="http://book.ciming.com/way.html">首页</a>&nbsp;&nbsp;<span style="color:#b7b6b6">|</span> &nbsp;&nbsp;
-		       <a href="http://book.ciming.com/registers.html">免费注册<span style="padding-left:20px;color:#b7b6b6">|</span></a>
-		      
-		     </td>
-		     
-		    <td style=""><a href="http://book.ciming.com/help.html">帮助中心</a><span style="padding-left:20px;color:#b7b6b6">|</span></td>
-		    <td>
-			<div id="nav" style="z-index: -1">
-				<ul class="service">
-				  <li><a href="http://book.ciming.com/onlineReport.html#">客户服务</a>
-				     <ul>
-				        <li><a href="http://book.ciming.com/serviceMailbox.html" target="_blank">客服邮箱</a></li>
-				     </ul>
-				  </li>
-	
-				  <li><a href="http://book.ciming.com/onlineReport.html#">网站导航</a>
-				     <ul>   
-				        <li><a target="_blank" href="http://www.ciming.com/" class="">慈铭集团</a></li>
-				     </ul>
-				  </li>
-				</ul>
-			</div>	
-			
-		    </td>
-		  </tr>
-    	</tbody></table>
-    </div>
-</div>
-
-<!---------头部banner 搜索  -------->
-<div class="banner">
-	<div class="banner_ser">
-		<table width="600" border="0" cellspacing="0" cellpadding="0">
-		  <tbody><tr>
-		    <td style="display: none;">
-		        <input name="searchContent" id="searchContent" style="font-size:12px;color:#848484;line-height:25px " type="text" value="请输入产品关键字，如名称、类型等">
-		        <a href="javascript:search()">
-<img src="./mama_files/ser_icon.jpg" alt="搜索">		    	</a>
-		    </td>
-		    <td style="display: none;" title="我的慈铭"><a href="http://book.ciming.com/userhome.html">
-<img src="./mama_files/mycm.jpg" alt="我的慈铭">		    	</a></td>
-		  </tr>
-		</tbody></table>
-	</div>
-</div>
-
-<input type="hidden" name="usertype" id="usertype" value="0">
-
-<input type="hidden" name="booktype" id="booktype" value="0">
-
-</div>
-
-<!---------顶部登录信息-------end -->
-
-<!---------导航菜单-------start->
-<!--导航菜单-->
-	
-
-
-
- 
- 
-<!---------导航-------->
-<div class="cus_nav">
-
-	<div class="nav">
-		<script>
-			$(function() {
-				$('#menuul >li>a').each(function(i, o) {
-					var href = $(this).attr('href');
-					if (location.href.indexOf(href) >= 0) {
-						//$(this).parent('li').addClass('cur');
-					}
-				})
-
-				$('.menuul2 ').hide();
-
-			})
-		</script>
-        
-		<ul>
-			<li id="00000000000000000000000000000027"><a hassubmenu="false" href="http://book.ciming.com/way.html" target="_self">预约服务</a></li>
-			<li id="00000000000000000000000000000028"><a hassubmenu="false" href="http://book.ciming.com/onlineReport.html" target="_blank">报告查询</a></li>
-			<li id="00000000000000000000000000000029"><a hassubmenu="false" href="http://book.ciming.com/checkupnote.html" target="_blank">体检须知</a></li>
-			<li id="00000000000000000000000000000031"><a hassubmenu="false" href="http://book.ciming.com/mybooks.html" target="_blank">预约记录</a></li>
-		</ul>
-	</div>
-
-
-
-</div>
-
-
-<!---------导航菜单-------end->
-	
-<!--当前位置   --->
-
-
-
-
-
-<!---------当前位置-------->
-<div class="curpos">
-<span style="text-align:left;">当前位置：慈铭体检 &gt;&gt;报告查询
-</span></div>
-
-
-
-<!---------当前位置-------end->
 
 <!---------主体内容------ start  -->
-<div class="book_con">
-	<table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout: fixed">
-		<tbody><tr>
-			<td width="224" style="padding-top: 8px;" rowspan="2">
-				<!---------左侧菜单-------->
-				
-<div class="green_widget-tit">
-	<div class="child">
-    	<span class="icon_widget-tit_14">在线报告 </span>
-        
-    </div>
-</div>
-<div class="widget-body">
-	<ul class="widget-list">
-    	<li class="widget-padding-none"><a href="javascript:void(0)" class="add_li_bg"><span>个人报告</span></a>
-        	<ul class="add_sublist">
-            <li><a href="http://book.ciming.com/onlineReport.html"><span class="widget-list-icon2">个人报告查询</span></a></li>
-            <li><a href="http://book.ciming.com/findReportCodePwd.html"><span class="widget-list-icon2">找回报告查询密码</span></a></li>
-            
-            <li><a href="http://book.ciming.com/updateReportCodePwd.html"><span class="widget-list-icon2">修改报告查询密码</span></a></li>
-            
-           </ul>
-        </li>
-    </ul>  
-    		<p style="margin-top:10px;margin-bottom:10px;"><strong style="color: #f00;">温馨提示:报告深度解读请下记健康APP! </strong></p>	
-				<img src="./mama_files/reportlogo.jpg" style="margin-left:4px;height:100px;width:100px;">
-				<img src="./mama_files/report.png" style="margin-left:4px;height:100px;width:100px;">
-			 
-			 
-</div>
-
-
-
-
-			</td>
-
-			<td style="padding-top: 8px; padding-left: 10px;" colspan="2">
-				<!---------右侧内容-------->
-					
-<script type="text/javascript" src="./mama_files/jsMD5.js(1).下载"></script>
-
-
-<script type="text/javascript" src="./mama_files/jquery.cookie-min.js.下载"></script>
-<script type="text/javascript" src="./mama_files/jquery.json.js.下载"></script>
-<script type="text/javascript" src="./mama_files/jquery.showLoading.js.下载"></script>
- 
-<script type="text/javascript" src="./mama_files/jsEncoding.js.下载"></script>
-<script type="text/javascript" src="./mama_files/message.js.下载"></script>
-<script type="text/javascript" src="./mama_files/options.js.下载"></script>
-<script type="text/javascript" src="./mama_files/paper.js.下载"></script>
-<script type="text/javascript" src="./mama_files/thickbox_plus.js.下载"></script>
-<script type="text/javascript" src="./mama_files/util.js.下载"></script>
-<script type="text/javascript" src="./mama_files/zzsc.js.下载"></script>
-
-
- <link href="./mama_files/order.css" rel="stylesheet" type="text/css">
-
-
-<style type="text/css">
-#nav li ul a:link { 
-color:#666; text-decoration:none; 
-} 
-
-
-#content { 
-clear: left; 
-} 
-#container{text-align:center;font-size:12px; color:#4D4D4D;}
-#container table{font-size:12px; color:#4D4D4D;margin: 0 auto;}
-#container select{border:1px solid #E7E8EA;}
-
-#pwdcontainer{text-align:center;font-size:12px; color:#4D4D4D;}
-#pwdcontainer table{font-size:12px; color:#4D4D4D;margin: 0 auto;}
-#pwdcontainer select{border:1px solid #E7E8EA;}
-
-.bg_gray {
-	height: 30px;
-	text-align:right;
-	margin-top:8px;
-	font-size: 14px;
-	font-weight: bold;	
-	vertical-align:middle;
-}
-
-.bg_gray2 {
-	height: 30px;
-	text-align:right;
-	margin-top:8px;
-	font-size: 14px;
-	vertical-align:middle;
-}
-
- .backbtn{border:1px solid #DDDDDD;background-color:#F7F7F7;height:20px;width:100px;color:#666666;float:right;margin-bottom: 5px;}
- .saveLinkbtn{border:1px solid #DDDDDD;background-color:#F7F7F7;height:20px;width:150px;margin-left:5px;color:#666666;float:right;margin-bottom: 5px;}
- 	 
-
-     #saveToLinkDiv{}
-	 #saveToLinkDiv table{font-size:12px;color:#666666;width:90%;}
-	
-	 #saveToLinkDiv table tr{border:1px solid #999999; height:30px;}
-	 #saveToLinkDiv table td{border:0px solid #999999; height:20px;text-align:center;}
-	 #saveToLinkDiv table td button.confi{border:1px solid #DDDDDD;background-color:#F7F7F7;height:20px;width:70px;color:#666666}
-	 #saveToLinkDiv .btnCont{margin-left:42%;}
-
-
-/*下拉列表样式问题  start*/
-
-   body{font-size:12px;}
-    ul,li{list-style-type:none;padding:0;margin:0;}
-    .main_nav{padding:2px;}
-    .main_nav a{display:block;line-height:28px;height:28px;padding-left:10px;overflow:hidden;}
-    .main_nav .navs{width:120px;height:28px;float:left;margin-right:2px;}
-    *html .main_nav .navs{overflow:hidden;} /* only for ie6 */
-    .main_nav .navs .nav_a{background:#ddfdd8;color:#000000;text-decoration:none;}
-    .main_nav .navs .nav_a:hover{background:#6a705e;}
-    .sub_nav{display:none;width:120px;position:relative;z-index:1000;opacity:0.9;filter:Alpha(opacity=90);}
-    .sub_nav li a {color:#000000;text-decoration:none;}
-    .sub_nav li a:link, .sub_nav li a:visited{background:#A0BED5;}
-    .sub_nav li a:hover{color:#FFFFFF;background:#0077BB;}
-    .clear{clear:both;height:1px;line-height:1px;font-size:1px;}
-
-/*下拉列表样式问题  end*/
-
-#adv{
- width:100px;
-    height:314px;
-    position:fixed;
-    right:60px;
-    top:100px;
-}
-#adv1{
- width:100px;
-    height:314px;
-    position:fixed;
-    left:60px;
-    top:100px;
+<div>
+	<style>
+.reset, .resetHover {
+	background-image: url(http://book.ciming.com/images/title1.png);
+	border: #dbecf3 1px solid;
+	padding: 5px;
+	height: 32px;
+	color: White;
+	background-position: -1px;
+	font-weight: bold;
+	font-size: 12px;
+	background-color: transparent;
+	background-repeat: repeat-x;
 }
 </style>
 
- 
-<div id="paperContentDiv" style="display:none;width:100%;position: absolute;top:0px;left:0px; z-index: 100000">
-	<div style="background-color: #ccc;text-align: right">
-		<span style="padding:0px 10px;background-color: greenyellow;border:1px solid green;cursor:pointer;" onclick="closeQuestPaper()">关闭</span>
-	</div>
-	<form class="chekcinfo" id="check" method="post">
-    	<div id="paper" class="con_inqu" style="text-align:center;background-color:#fff; border: #fff solid 1px;padding: 0px;height: 100%;width: 100%" data="">
-    	</div>
-    	<div id="postinfo" style="height: 50px; line-height: 50px; text-align: center; display: block; color: red; font-size: 15px"></div>
-    	<input type="hidden" name="guideBarcode" id="guid"> 
-	</form>	 
-    <iframe src="./mama_files/saved_resource.html" style="display: none;" id="formIframe" name="formIframe"></iframe>
-	<form id="form" method="post"><input type="hidden" name="json" id="json"></form>
-</div>
-<script type="text/javascript">
-//保存调查问卷结果
-function post() {
-  saveResultNew();
-}
-</script>
-<div class="gray_widget-tit">
-	<div class="child">
-    	<span class="icon_widget-tit_14">个人报告查询 </span>
-    </div>
+<div style="width:400px; height:238px; font-size:12px; padding:3px;z-index:10000;display:none;" id="divTestWindow">
+        <div style="width:90%;height:135px;overflow:auto; text-align:left;vertical-align:top;padding:10px;line-height:30px;text-indent:28px">
+            通过对本次体检的深度测评，可进一步了解自身健康指数，完成深度测评的您将有机会选择更优健康保障计划。您是否愿意参与？
+        </div>
+        <div style="height: 25px; line-height: 25px; width: 190px; padding-left: 10px; display: block; display: none" id="waitMR">
+            <div style="width: 25px; height: 25px; line-height:25px; float: left;">
+                <img src="./loading1.gif" height="17" width="18">
+            </div>
+            <div style="float: right; width:160px">正在进行评估，请等待……</div>
+        </div>
+        <div style="width: 100%; text-align: center; vertical-align: middle; padding-top: 2px; padding-bottom: 2px; height: 35px; line-height: 35px; display: block;">
+            <input type="button" class="reset" value="马上参与" id="btnDoTest" name="btnDoTest" onclick="mrbjOpen();">&nbsp;<input type="button" class="reset" value="稍后参与" id="btnNotDoTest" name="btnNotDoTest" onclick="closeTestQuesionWin();">
+        </div>
 </div>
 
-
-<div class="widget-body" style="position: relative;z-index: 999">
-<div id="container" align="center" style="width: 100%; display: none;">
-	<form id="checkReportForm">
-		<table cellspacing="10px" cellpadding="0" width="60%">
-				<input type="hidden" value="0" id="isNeedPwd">
-			<tbody><tr>
-				<td class="bg_gray">*查询码: </td>
-				<td align="left"><input style="width: 75%" class="input_normal" name="queryCode1"></td>
-			</tr>
-			<tr>
-
-				<td class="bg_gray">*密码: </td>
-				<td align="left"><input style="width: 75%" class="input_normal" type="password" name="passWord1" id="passWord1" value="">
-				</td>
-			</tr>
-			<tr>
-				<td class="bg_gray">验证码：</td>
-				<td style="vertical-align:middle;">
-					<div style="height: 50px;">
-						<input id="authcode" name="authcode" type="text" class="code" maxlength="4" style="float:left;" value=""> <img id="imageCaptcha" onclick="reloadCaptcha()" src="./mama_files/generatImage.html" width="65" height="26" style="margin-left: 8px;margin-top:13px;float:left;vertical-align:middle;">
-
-		       		</div>
-				</td>
-		   </tr>
-		</tbody></table>
-	</form>
-	
-
-	
-	<div id="postdivinfo" style="display:block;">
-			<span id="postinfo" style="margin-left:150px;clear:both;height:20px; line-height:20px; text-align:left; display:block; font-size: 15px">
-			<strong style="color: #f00;">
-				为了保障您个人隐私信息的安全,建议您首次查询体检报告后,尽快修改报告查询的初始密码！
-			</strong>
-			 
-			</span>
-	
-	</div>	
-				
-				
-	
-	<div id="rptGrid" style="float: left; margin: 10px; border: 1px solid rgb(0, 221, 0); width: 700px; font-size: 15px; display: none;">
-		<ul style="clear:both;list-style:none; border-bottom:1px dashed #00dd00;">
-			<li style="padding-top3px;background-color:#F7F7F7;width:50px;height:25px;float:left;"><span class="bg_gray">序号</span></li>
-			<li style="padding-top3px;background-color:#fafafa;width:70px;height:25px;float:left;"><span class="bg_gray">报告名称</span></li>		
-			<li style="padding-top3px;background-color:#fafafa;width:180px;height:25px;float:left;"><span class="bg_gray">体检分院</span></li>		
-			<li style="padding-top3px;background-color:#fafafa;width:150px;height:25px;float:left;"><span class="bg_gray">体检日期</span></li>	
-			<li style="padding-top3px;background-color:#fafafa;width:150px;height:25px;float:left;"><span class="bg_gray">报告生成日期</span></li>
-			<li style="padding-top3px;background-color:#fafafa;width:100px;height:25px;float:left;"> <span class="bg_gray">查看	</span></li>					
-		</ul>
-		<ul id="grdLine1" style="clear:both;list-style:none; margin-top:5px;">
-			<li style="background-color:#F7F7F7;width:50px;float:left;"><span id="l1grd1" class="bg_gray2"></span> </li>
-			<li style="background-color:#fafafa;width:70px;float:left;"><span id="l1grd2" class="bg_gray2"></span></li>		
-			<li style="background-color:#fafafa;width:180px;float:left;"><span id="l1grd3" class="bg_gray2"></span></li>		
-			<li style="background-color:#fafafa;width:150px;float:left;"><span id="l1grd4" class="bg_gray2"></span></li>	
-			<li style="background-color:#fafafa;width:150px;float:left;"><span id="l1grd5" class="bg_gray2"></span></li>
-			<li style="background-color:#fafafa;width:100px;float:left;"><span id="l1grd6" class="bg_gray2"></span>	</li>					
-		</ul>
-		<ul id="grdLine2" style="clear:both;list-style:none;margin-top:5px;">
-			<li style="background-color:#F7F7F7;width:50px;float:left;"><span id="l2grd1" style="bg_gray2"></span> </li>
-			<li style="background-color:#fafafa;width:70px;float:left;"><span id="l2grd2" class="bg_gray2"></span></li>		
-			<li style="background-color:#fafafa;width:180px;float:left;"><span id="l2grd3" class="bg_gray2"></span></li>		
-			<li style="background-color:#fafafa;width:150px;float:left;"><span id="l2grd4" class="bg_gray2"></span></li>	
-			<li style="background-color:#fafafa;width:150px;float:left;"><span id="l2grd5" class="bg_gray2"></span></li>
-			<li style="background-color:#fafafa;width:100px;float:left;"><span id="l2grd6" class="bg_gray2"></span>	</li>					
-		</ul>		
-	</div>				
-	<div style="margin-top: 3px">
-		<input class="bt" type="button" id="submitSelect" value="" style="cursor:pointer;width:66px;height:27px;border:none;background:url(http://book.ciming.com/themes/default/images/ca.png) no-repeat">
-		<!--
-		<input class='bt' type="reset" id="cancel" value=""  style="cursor:pointer;width:66px;height:27px;border:none;background:url(http://book.ciming.com/themes/default/images/fi.png) no-repeat"/>
-		-->
-	</div>
-	 <p style="text-align: center; padding:10px;  background-color: rgb(241, 241, 241);text-align:left;margin-top:8px;">
-	    友情提示 ：查询码和密码是由慈铭通过手机短信发送给您的唯一用于报告查询的方式。请妥善保管查询码和密码。如果您丢失或者忘记，请使用"找回查询码"功能。 
-	 </p>	
-</div>
-</div>
-
-
-
-
-<form id="downLoadForm" style="display: none" method="post">
-<input name="queryCodeDown">
-<input name="filename">
-<input name="guideBarcodeDown">
-</form>
-<div id="saveToLinkDiv" style="position:absolute;top:20%;left:20%; z-index:99999;width:60%;border:1px solid #999999;background-color:#F7F7F7;display:none;padding: 5 auto;">
-	<form id="reportForm" style="margin-top: 5px;">
-		<table cellspacing="0" cellpadding="0">
-			<tbody><tr style="display: none">
-				<td></td>
-				<td colspan="3">
-					<input name="queryCode" type="hidden" id="queryCode_hidden" value="002000718051618482">
-					<input name="rptCode" type="hidden" title="报告内码">
-					<input name="rptType" type="hidden" value="00">
-					<input name="isUse" type="hidden">
-					<input name="personId" type="hidden">
-					<input name="passWord" type="hidden" id="passWord_hidden" value="69f8b14c62c66ef38555eeca099acd19">
-					<input name="resultId" type="hidden" value="" title="问卷结果ID">
-				</td>
-			</tr>
-		</tbody></table>
-	</form>  
-</div>
-<div id="window-like-report" style="position: fixed; overflow: scroll; width: 100%; top: 0px; left: 0px; background-color: white; z-index: 99999; height: 970px; display: block; border: 1px solid green;">
-<div id="adv"><img src="./mama_files/ad_100x300.png" width="100px" height="300px"></div>
-<div id="adv1"><a href="http://download.jijiankang.cn/jjk_wx/jjkdown.html" target="_blank"><img src="./mama_files/adv1.png" width="100px" height="300px"></a></div>
-<!--
-
-<ul id="navRight" > 
-<li> 功能菜单  
-<ul> 
-<li><a href="#" onclick="questionPaper()">我要填写满意度调查</a></li> 
-<li><a id="guahaowangbutton"  href="#">在线预约挂号</a></li> 
-<li id="healthyTest" style="display:none;" ><a  href="#" onclick="mrbjOpen()">深度体检测评</a></li> 
-<li><a href ="http://book.ciming.com/serviceMailbox.html" id="complain" url="http://book.ciming.com/serviceMailbox.html" target ="_blank">意见反馈</a></li> 
-<li><a href="#" onclick="rptPrint()">打印</a></li> 
-<li><a href="#" onclick="downThisRpt()">下载</a></li> 
-</ul> 
-</li>
-</ul>
---><!--
-<ul style="position: fixed;right:20px;top:0px;padding:0px;background-color:#DDFDD8;
-	border:1px solid #49D536;cursor: pointer;"> 
-	下拉列表样式 start-->
-<ul style="float:right">
-<li>	<!--下拉列表样式 start-->
-<ul class="main_nav">
-<li class="navs" onmouseover="showSubNav(&#39;subNav_1&#39;);" onmouseout="hideSubNav(&#39;subNav_1&#39;);">
-    <a href="javascript:;" class="nav_a">功能菜单</a>
-    <ul id="subNav_1" class="sub_nav">
-<li><a href="http://book.ciming.com/onlineReport.html#" onclick="questionPaper()">我要填写满意度调查</a></li> 
-<li id="guahaowangbutton_li" style="display: none;"><a id="guahaowangbutton" href="http://book.ciming.com/onlineReport.html#">在线预约挂号</a></li> 
-<li id="healthyTest" style="display:none;"><a href="http://book.ciming.com/onlineReport.html#" onclick="mrbjOpen()">深度体检测评</a></li> 
-<li><a href="http://book.ciming.com/serviceMailbox.html" id="complain" url="http://book.ciming.com/serviceMailbox.html" target="_blank">意见反馈</a></li> 
-<li><a href="http://book.ciming.com/onlineReport.html#" onclick="rptPrint()">打印</a></li> 
-<li><a href="http://book.ciming.com/onlineReport.html#" onclick="downThisRpt()">下载</a></li> 
-    </ul>
-</li>
-<li class="navs">
-    <a href="javascript:closeReport();" class="nav_a">关闭</a>
-</li>
-<li class="clear"></li><!-- 这个 li 标签必须有，用来清除浮动，这样下面的布局就不会被破坏 -->
-</ul>
-<!--下拉列表样式 end-->
-</li>
-
-</ul>
-<!--下拉列表样式 end-->
-
-	<iframe src="./mama_files/getReportInfo.html" id="iframe" name="iframe" frameborder="0" scrolling="no" width="100%" onload="Javascript:SetWinHeight(this);" height="9265"></iframe>
-</div>
-<input type="hidden" id="rptAddr_" value="MTE30C2EU01DDH4QEDLHLIVH5UO9S248">
-<input type="hidden" id="paperCode_">
-<input type="hidden" id="recId_" value="08999002000718051618482">
-<input type="hidden" id="checkName_" value="002000217060702542">
-<input type="hidden" id="checkOrganId_" value="0020002">
-<input type="hidden" id="checkOrganName_" value="深圳南山门诊部">
-<input type="hidden" id="guideBarcode_" value="002000718051618482">
-<input type="hidden" id="cardNo" value="452123195707094927">
-
-<input type="hidden" id="mrbj123sdfsdfsddsigcheckid_hidden" value="002000718051618482">
-<input type="hidden" id="mrbj123sdfsdfsddpwd_hidden" value="69f8b14c62c66ef38555eeca099acd19">
- 
-
-<form method="post" name="ghform" id="ghform" action="http://book.ciming.com/guahaopage.html" target="_blank">
-	<input type="hidden" name="sglcheckid" id="ghsglcheckid" value="002000718051618482">
-
-</form>
 <form method="post" name="mrform" id="mrform" action="http://book.ciming.com/mrbjpage.html" target="_blank">
 	<input type="hidden" name="sglcheckid" id="mrsglcheckid" value="">
 	<input type="hidden" name="sglpwd" id="mrsglpwd" value="">
 </form>
-<script type="text/javascript">
-	var authcodeCheck = false; // 验证码是否正确：true:正确; false:错误
-	var allTime = 60;
-	var taskId = "";
-	var phoneCheckCode = "";
-	function SetWinHeight(obj) 
-		{ 
-			var win=obj; 
-			if (document.getElementById) 
-			{ 
-				if (win && !window.opera) 
-				{ 
-					if (win.contentDocument && win.contentDocument.body.offsetHeight) 
-						win.height = win.contentDocument.body.offsetHeight; 
-					else if(win.Document && win.Document.body.scrollHeight) 
-						win.height = win.Document.body.scrollHeight; 
-				} 
-			} 
-		} 
-	
-	function getRandomCode() {
-		var rr = "";
-		for ( var i = 0; i < 6; i++) {
-			rr += Math.floor(Math.random() * 10) + "";
-		}
-		return rr;
-	}
-	
-$(init);
-function init(){
-	//$("input[name=paperCode]").val();
-	$("#submitSelect").click(post1);
-	$("#fanhui").click(backSelect);	$("#cancel").click(cancel);
-	$("#submitSave").click(confirmSave);
-	$("input[name=queryCode1]").val("");
-	$("input[name=passWord1]").val("");
-	
-	$("#rptGrid").hide();
 
-	reloadCaptcha();
-	
-	if (window.postMessage) {
-		addEvent(window, "message", messageHanlder)
-	}
-	
-}
-function cancelRepPwd(){
-	$("#pwdcontainer").css("display","none");
-	$("#container").css("display","block");
-}
+<link href="./easyui.css" type="text/css" rel="stylesheet">
+<link href="./icon.css" type="text/css" rel="stylesheet">
 
-function preview(lineNo)
-{
 
-	var lineName = "grdLine"+lineNo;
-
-	var obj = $("#"+lineName).attr("linkAddress");
-	var rptAddStr = obj;
-				
-	$('#mrbj123sdfsdfsddsigcheckid_hidden').val($('input[name=queryCode1]').val());
-	$('#mrbj123sdfsdfsddpwd_hidden').val($('input[name=passWord1]').val());
-	
-	if(lineNo == '1')
-	{
-		 guahaoisShow($('input[name=queryCode1]').val());
-	}
-
-						
-							 
-    $("#iframe").attr("src","http://book.ciming.com/getReportInfo.html?filename="+rptAddStr);
-    $("input[name=filename]").val(rptAddStr);
-	$("#rptAddr_").val("");
-	$("#rptAddr_").val(rptAddStr);
-	$("#window-like-report").height($(document).height());
-	$("#window-like-report").css("display","block");
-   $('#paperIframe').hide();
-	$this.attr("disabled",false);
-}
-
-function post1(){
-	if(!checkMess()){
-		return false;
-	}	
-	
-	var $this= $("#submitSelect");
-
-		$("input[name=passWord1]").val(hex_md5($("input[name=passWord1]").val()));
-		var para = $('#checkReportForm').serialize();
-		$.ajax({
-				url:"http://book.ciming.com/loginReportPage.html",
-				dataType:'json',
-		        data:para,
-		        type:'post',
-				success:function(result){
-				
-					if(result.isSuccess==0){
-						if(result.datas.length == 2)
-						{
-							$("#rptGrid").show();
-							
-							$.each( result.datas, function(index, content)
-							{ 				
-								if(content.rptType == '00')
-								{
-									$("#l1grd1").html(index+1);	
-									$("#l1grd2").html("体检报告");
-									$("#l1grd3").html(content.organName+" ");
-									$("#l1grd4").html(content.registTime+" ");
-									$("#l1grd5").html(content.crtTime+" ");
-									$("#l1grd6").html("<a   href='javascript:preview(1)' linkAddress='"+content.rptAdd+"'> <strong style='color:red;'>查看</strong> </a>");
-									$("#grdLine1").attr("linkAddress",content.rptAdd);
-									$("#grdLine1").attr("rptCode",content.rptCode);
-									$("#grdLine1").attr("rptPwd",content.rptPwd);
-									$("#grdLine1").attr("rptType",content.rptType);
-									$("#grdLine1").attr("linkAddress",content.rptAdd);
-								}else if(content.rptType == '01'){
-									$("#l2grd1").html(index+1);	
-									$("#l2grd2").html("乙肝报告");
-									$("#l2grd3").html(content.organName+" ");
-									$("#l2grd4").html(content.registTime+" ");
-									$("#l2grd5").html(content.crtTime+" ");
-									$("#l2grd6").html("<a  href='javascript:preview(2)' linkAddress='"+content.rptAdd+"'> <strong style='color:red;'>查看</strong> </a>");
-									$("#grdLine2").attr("linkAddress",content.rptAdd);
-									$("#grdLine2").attr("rptCode",content.rptCode);
-									$("#grdLine2").attr("rptPwd",content.rptPwd);
-									$("#grdLine2").attr("rptType",content.rptType);
-									$("#grdLine2").attr("linkAddress",content.rptAdd);								
-								}							
-							
-							});						
-						
-							return;
-						}else{
-						
-							$("#rptGrid").hide();
-					
-							$('#mrbj123sdfsdfsddsigcheckid_hidden').val($('input[name=queryCode1]').val());
-							$('#mrbj123sdfsdfsddpwd_hidden').val($('input[name=passWord1]').val());
-						 	guahaoisShow($('input[name=queryCode1]').val());
-					  		 var  obj=result.t;
-							$("input[name=queryCode]").val(obj.rptCode);
-							$("input[name=passWord]").val(obj.rptPwd);
-	                        $("input[name=rptType]").val(obj.rptType);
-							  $("#recId_").val(obj.recId);
-							  $("#checkName_").val(obj.crtId);
-							  $("#checkOrganId_").val(obj.organId);
-							  $("#checkOrganName_").val(obj.organName);
-							  $("#guideBarcode_").val(obj.guideBarcode);
-							  $("#cardNo").val(obj.cardNo);
-					
-					
-							 $("#container").css("display","none");
-
-							var rptAddStr = obj.rptAdd;
-							$("input[name=queryCodeDown]").val(obj.rptCode);
-							$("input[name=filename]").val(rptAddStr);
-						 
-							$("#iframe").attr("src","http://book.ciming.com/getReportInfo.html?filename="+rptAddStr);
-	 
-							var houzhuiFile = $.trim(obj.fileExtension);
-							if(houzhuiFile=="html" ||houzhuiFile=="htm" ){
-								$("#rptAddr_").val("");
-								$("#rptAddr_").val(rptAddStr);
-								$("#window-like-report").height($(document).height());
-								//var CmdUrl = "http://book.ciming.com/getReportInfo.html?filename="+rptAddStr;
-								
-								//CmdUrl = encodeURI(CmdUrl);
-								//$("#window-like-report").load("http://book.ciming.com/getReportInfo.html?filename="+rptAddStr);
-								$("#window-like-report").css("display","block");
-								$('#paperIframe').hide();
-					        }
-					
-	                     	$("input[name=resultId]").val("");	                    }              
-	                                  		   
-					}else if(result.isSuccess==2){
-						//alert('您首次查询体检报告，请重新设置报告查询密码后再查询！');
-						
-						$("#postdivinfo").show();
-							
-					}else{
-						$("#passWord1").attr("value","");
-						$("#authcode").attr("value","");
-						
-						reloadCaptcha();
-						
-						alert(result.mesg) ;
-						
-						
-					}
-					$this.attr("disabled",false);
-				},
-				error:function(XMLHttpRequest, textStatus,
-						errorThrown) {
-					
-					alert("网络繁忙请稍后重试！");
-					$this.attr("disabled",false);
-				}
+<script type="text/javascript" src="./jquery-1.8.0.js.下载"></script>
+<script type="text/javascript" src="./jquery.easyui.min.js.下载"></script>
+<script>
+	var openWindow;
+	$(function() {
+	  
+	  var redirct = '0';
+	    if(redirct=='1'){
+	    window.open('https://iwenjuan.baidu.com/?code=5jmn9r');
+	  }
+	  
+       //判断时候有评测资格
+           var sglcheckid = parent.document.all.mrbj123sdfsdfsddsigcheckid_hidden.value;
+		   var sglpwd= parent.document.all.mrbj123sdfsdfsddpwd_hidden.value;
+           var tempUrl = "http://mrbj.services.system.ciming.com";
+ 
+           
+		 $.ajax({
+	        url: tempUrl + '/checkTest.ashx',
+	        dataType: 'jsonp',
+	        jsonp: 'jsoncallback', //默认callback
+	        data: {
+	            sglid: sglcheckid,
+	            pwd: sglpwd
+	        },
+	        async: true,
+	        success: function (data, textStatus, XMLHttpRequest) {
+	        var retMsg = data.retMsg;  //0
+			if (1 != retMsg || "1" != retMsg) {
+			    $("#healthyTest",window.parent.document).css("display","none");
+				return false;
+			}
+			$("#healthyTest",window.parent.document).css("display","block");
+           openWindow = $("#divTestWindow").show().dialog({
+			modal : false,
+			title : "  ",
+			width : 388,
+			height : 270,
+			top : 60,
+			left : 474.5
 		});
 		
-}
-
-
-function guahaoisShow(sglcheckid){
-	
-	$("#ghsglcheckid").val(sglcheckid);
-	$.ajax({
-	    url : 'http://book.ciming.com/guahaowangss.html',
-	    dataType : "json",
-	    data:"sglcheckid="+sglcheckid,
-	    type:'post',
-	    cache :false,
-	    success : function(json){
-	        if(json.flag){
-	        	$('#guahaowangbutton').css("display","");
-	        	$("#guahaowangbutton").click(function(){ 
-	        		
-	        		document.ghform.submit();
-	        		//window.open ( "http://book.ciming.com/guahaopage.html?sglcheckid="+sglcheckid , "_blank" ) ; 
-	        	});
-	        }else{
-	          $('#guahaowangbutton_li').css("display","none");
+		
+	        },
+	        error: function (XMLHttpRequest, textStatus, errorThrown) {
+	        alert("网络连接故障！");
 	        }
-
-	    }
+	    });
+		//判断结束    
+		  
 	});
-}
 
-function checkMess(){
-	if($("input[name=queryCode1]").val()==""){
-		alert("查询码不能为空!");
-		return false;
+	function closeTestQuesionWin() {
+		openWindow.dialog('close');
 	}
-	if($("input[name=passWord1]").val()==""){
-		alert("密码不能为空!");
-		
-		$("#passWord1").attr("value","");
-		return false;
-	} 
-	
-	if($("input[name=authcode]").val()==""){
-		alert("验证码不能为空!");
-		return false;
-	}
-	
-	unFocusAuthcode();
-	
-	if (!authcodeCheck) {
-			alert("[验证码]错误");
-			$("#passWord1").attr("value","");
-			$("#authcode").attr("value","");
-			reloadCaptcha();
-			return false;
-		} 
-	
-	return true;
-}
-function backSelect(){
-	$("input[name=queryCode1]").val("");
-	$("input[name=passWord1]").val("");
-	//验证码刷新
-	$("input[name=authcode]").val("");
-	reloadCaptcha()
-	
-	$("#checkCode").val("");
-	$("input[name=queryCode]").css("border","1px solid #DDDDDD");
-	$("input[name=passWord]").css("border","1px solid #DDDDDD");
-	$("#checkCode").css("border","1px solid #DDDDDD");
-	
-	
-	$("#container").css("display","block");
-}
-
-function downThisRpt(){
-	$("#downLoadForm").attr("action","http://book.ciming.com/downloadReport.html");
-	$("#downLoadForm").submit();
-}
-function getCurrTime(){
-	 var d=new Date(); 
-	 var month=d.getMonth()+1;
-	 var day=d.getDate();
-	 var hh=d.getHours();
-	 var min=d.getMinutes();
-	 var ss=d.getSeconds();
-	 if(month.toString().length==1){
-	    	month="0"+month.toString();
-	    }
-	 if(day.toString().length==1){
-		 day="0"+day.toString();
-	    }
-	 if(min.toString().length==1){
-		 min="0"+min.toString();
-	    }
-	 if(hh.toString().length==1){
-		 hh="0"+hh.toString();
-	    }
-	 if(ss.toString().length==1){
-		 ss="0"+ss.toString();
-	    }
-     var str=d.getFullYear()+"-"+month+"-"+day+" "+hh+":"+min+":"+ss;   
-     return str;
-}
-function saveToLink(){
-	if(""==""){
-		return false;
-	}
-	$("input[name=rptCode]").val("");	$("input[name=passWord]").val($("input[name=passWord1]").val());
-	var para = $('#reportForm').serialize();
-		$.ajax({
-				url:rootpath+"/command/dispatcher/org.online.web.customer.report.UcReportCmd/addReport?ajax=yes",
-				dataType:'json',
-		        data:para,
-		        type:'post',
-				success:function(result){
-					if(result.flag==1){					}else if(result.flag==2){					}else{
-						alert("将此查询结果保存到[我的报告]中时发生错误:"+result.msg);
-					}
-		        },
-				error:function(XMLHttpRequest, textStatus,
-						errorThrown) {
-					alert("网络繁忙请稍后重试！");
-				}
-		});
-}
-function cancleSave(){
-	$("#saveToLinkDiv").css("display","none");
-	clearData();
-}
-function confirmSave(){
-	var $this= $("#submitSave"); 
-		$this.attr("disabled",true);
-		var para = $('#reportForm').serialize();//序列化参数 
-		$.ajax({
-				url:rootpath+"/command/dispatcher/org.online.web.customer.report.UcReportCmd/addReport?ajax=yes",
-				dataType:'json',
-		        data:para,
-		        type:'post',
-				success:function(result){
-					if(result.flag==1){//成功
-						alert(result.msg);
-					}else if(result.flag==2){//已有相应数据，无需保存
-						alert(result.msg);
-					}else{//失败，发生错误
-						alert(result.msg);
-					}
-					$this.attr("disabled",false);
-					clearData();
-					$("#saveToLinkDiv").css("display","none");
-		        },
-				error:function(XMLHttpRequest, textStatus,
-						errorThrown) {
-					alert("网络繁忙请稍后重试！");
-					$this.attr("disabled",false);
-					clearData();
-					$("#saveToLinkDiv").css("display","none");
-				}
-		});
-}
-function clearData(){
-	$("input[name=queryCode]").val("");
-	$("select[name=rptType]").val("");
-	$("select[name=isUse]").val("");
-	$("#personId").val("");
-}
-//function rptPrint(){
-//	document.frames("iframe").document.execCommand("Print", false);
-//}
-
-var global_Html = "";   
-
-function rptPrint() {
-
-     if (window.frames['iframe'] == null) {
-        document.getElementById('iframe').focus();
-        document.getElementById('iframe').contentWindow.print();
-     }
-     else {
-        window.frames['iframe'].focus();
-        window.frames['iframe'].print();
-     } 
-
-}
-
-function closeReport(){
-	$("#spanType").html("");
-	$("#iframe").attr("src","");
-	$("#window-like-report").css("display","none");
-	backSelect();
-}
-function DoReport(meth){
-	if(meth == 'Print'){
-		rptPrint();
-	}else if(meth == 'SaveAs'){
-	$("#downLoadForm").attr("action",rootpath+"/command/dispatcher/org.online.web.customer.report.UcReportCmd/downloadReport");
-	$("#downLoadForm").submit();//提交表单
-	//backSelect();
-	}
-}
-function __doPostBack(a,b){
-	$("#window-like-report div").html("");
-	$("#window-like-report").css("display","none");
-	backSelect();
-}
-function questionPaper(){
-	loadPaper();
-	$("#paperContentDiv").height($(document).height());
-	$("#paper").height($(document).height());
-	$("#paperContentDiv").css("display","block");
-	$("#iframe").hide();//报告隐藏
-}
-function closeQuestPaper(){
-	//$("#paperContentDiv").html("");
-	$("#paperContentDiv").css("display","none");
-	$("#iframe").show();//报告隐藏
-}
-
-
- 
-function loadPaper(){
-
- 	$.ajax({
-	        url: "http://book.ciming.com/getPaperInfo.html",
-	       	type: 'post',
-	       	 
-	        dataType: 'text',
-	        async: false,
-	        success: function (result) {
-	           $('#paper').html(result);
- 			},
-	        error: function (XMLHttpRequest, textStatus,errorThrown) {
-	             	alert("网络繁忙，请稍后！");
-	        }
-    });
-    getQuestion();
-//alert($('#paper').html());
-//	$('#paper').load(paperAddress,function(data){
-	//		var recId=$("#recId").val();
-//			 $.getScript("http://book.ciming.com/webhtml/autoselect.js",function(){
-//			 	autoSelect(recId, "http://book.ciming.com/command/dispatcher/ciming.PubDispatcherCommand/queryPaperResult");
-//			 		
-//			 });
-//			}
-//	);
-}
-function getQuestion(){
-var paperCode= $("#paperCode").val();
- 
- 
-	$.ajax({
-	        url: "http://book.ciming.com/getQuestionPage.html",
-	       	type: 'post',
-	       	 data : {
-					'paperCode' : paperCode
-		 
-				},
-	        dataType: 'json',
-	        async: false,
-	        success: function (result) {
-	        //	$("#postinfo").html(result.option);
-	        if(result==null){
-	        	alert("加载问卷出错请刷新重试");
-	        	return;
-	        }
-	        	showEdit(result.result);
- 			},
-	        error: function (XMLHttpRequest, textStatus,errorThrown) {
-	             	alert("网络繁忙，请稍后！");
-	        }
-    });
-}
-function showEdit(res){
-  for (var i = 0; i < res.length; i++) {
-    var code = res[i].optionCode;
-	var value = res[i].optionContent;
-	var ele = $("*[optionCode='" + code + "']");
-	if (ele && ele.length) {
-		var tag = ele[0].tagName.toLowerCase();
-		if (tag == 'input') {
-		var type = ele.attr('type')
-		if (type == 'radio' || type == 'checkbox') {
-			ele.attr('checked', true);
-		} else if (type == 'text') {
-		   ele.val(value);
-		}
-		} else if (tag == 'textarea') {
-		  ele.val(value);
-		} else {
-		  ele.html(value);
-		}
-	}
-  }
-}
-function saveResultNew(){
-var arr=new Array();
- getInfo(arr);
- var str=JSON.stringify(arr); 
-if(str == "[]"){
-alert("请至少回答一题");
- return false;
-}
- var paperCode= $("#paperCode").val();
- $.ajax({
-	       url: "http://book.ciming.com/saveQuestion.html",
-	       	type: 'post',
-	        dataType: 'text',
-	        async: false,
-	        data : {
-					'arr' : str,
-					'paperCode':paperCode
-		 
-				},
-	        success: function (result) {
-	        	 if(result=="true"){
-		            closeQuestPaper();
-	        	 }else{
-	        	 	alert("保存出错请重新提交");
-	        	 }
- 			},
-	        error: function (XMLHttpRequest, textStatus,errorThrown) {
-	             	alert("网络繁忙，请稍后！");
-	        }
-    });
-	
-}
-function getInfo(arr){
-var paperCode= $("#paperCode").val();
-$.ajax({
-	        url: "http://book.ciming.com/getQuestion.html",
-	       	type: 'post',
-	        dataType: 'json',
-	        async: false,
-	        data : {
-					'paperCode' : paperCode
-		 
-				},
-	        success: function (result) {
-	        	 var res=result;
-				 for (var i = 0; i < res.length; i++) {
-				    var code = res[i].optionCode;
-					var value = res[i].optionContent;
-					var titleCode= res[i].titleId;
-					var ele = $("*[optionCode='" + code + "']");
-				     
-					if (ele && ele.length) {
-						var tag = ele[0].tagName.toLowerCase();
-						 
-						if (tag == 'input') {
-							var type = ele.attr('type')
-							if (type == 'radio' || type == 'checkbox') {
-								if(ele.attr('checked')){
-									pushObjectSelect(arr,code,ele,titleCode);
-							    }
-						    } else if (type == 'text') {
-							    if(ele.val()!=""){
-							       pushObjectText(arr,code,ele,titleCode);
-							    }
-						       
-							  }
-						} else if (tag == 'textarea') {
-						     if(ele.val()!=""){
-						     pushObjectText(arr,code,ele,titleCode);
-						     }
-						  
-						} else {
-						if(ele.val()!=""){
-						   pushObjectText(arr,code,ele,titleCode);
-						}
-						  
-						}
-					}
-				 }	
- 			},
-	        error: function (XMLHttpRequest, textStatus,errorThrown) {
-	             	alert("网络繁忙，请稍后！");
-	        }
-    });
-	 
-}
- 
- function pushObjectText(arr,code,ele,titleCode){
-	var o=new Object();
-	o.optionCode=code;
-	o.titleId=titleCode;
-	o.optionContent=ele.val();
-	arr.push(o);
-}
-function pushObjectSelect(arr,code,ele,titleCode){
-	var o=new Object();
-	o.optionCode=code;
-    o.optionContent="";
-    o.titleId=titleCode;
-	arr.push(o);
-}
-
-
-$("#spanType").html("");
-
- function checkMobilePhone (flag) {
-   var _email = /^[0-9]{11}$/;  
-   if(!_email.test(flag)){
-   		return  false ; 
-	}else{
-		return true;
-	} 
-}
-
-
-function addEvent(sNode, sEventType, oFunc) {
-	var oElement = sNode;
-	if ((typeof oFunc).toLowerCase() != "function") {
-		return;
-	}
-	if (oElement.attachEvent) {
-		oElement.attachEvent('on' + sEventType, oFunc);
-	} else if (oElement.addEventListener) {
-		oElement.addEventListener(sEventType, oFunc, false);
-	} else {
-		oElement['on' + sEventType] = oFunc;
-	}
-	return true;
-}
-var messageHanlder = function(oEvt) {
-	oEvt = oEvt || window.event;
-	var data = oEvt.data;
-	callback && callback(data);
-};
-
-function callback(d) {
-	var data = eval("(" + d + ")");
-	var iframe = document.getElementsByTagName("iframe")[0];
-	var newIframe = document.createElement('iframe');
-	iframe.parentNode.replaceChild(newIframe, iframe);
-	newIframe.setAttribute("width", iframe.getAttribute('width'));
-	newIframe.setAttribute("height", iframe.getAttribute('height'));
-	newIframe.setAttribute("frameborder", iframe.getAttribute('frameborder'));
-	newIframe.setAttribute("scrolling", iframe.getAttribute('scrolling'));
-	newIframe.setAttribute("marginheight", iframe.getAttribute('marginheight'));
-	newIframe.setAttribute("marginwidth", iframe.getAttribute('marginwidth'));
-	newIframe.setAttribute("id", iframe.getAttribute('id'));
-	newIframe.setAttribute("name", iframe.getAttribute('name'));
-	newIframe.setAttribute("src", data['to']);
-	var comp = false;
-	if (newIframe.attachEvent) {
-		newIframe.attachEvent("onload", function() {
-					comp = true;
-				});
-	} else {
-		newIframe.onload = function() {
-			comp = true;
-		};
-	}
-	var timeid = window.setInterval(function() {
-				if (comp) {
-					window.clearInterval(timeid);
-					window.frames[0].postMessage(data['json'], "*")
-				}
-			}, 1);
-
-}
-
-//重置方法
-function cancel(){
-	$('#checkReportForm')[0].reset();
-}
-function reloadCaptcha() {  
-
-    var captchaURL = "http://book.ciming.com/generatImage.html?id=88888";  
-    
-    captchaURL= captchaURL.replace(captchaURL.substring(captchaURL.indexOf("=")+1, captchaURL.length), Math.floor(Math.random()*9999999999));
-      
-    $('#imageCaptcha').attr('src', captchaURL);  
-
-  
-}
-// 验证码失去焦点时进行正确验证
-	function unFocusAuthcode() {
-		var code = $("#authcode").val();
-		
-		//alert(code);
-		var url = "http://book.ciming.com/userRegistAuthcodeCheck.html";
-		$.ajax({
-	        url: url,
-	       	type: 'post',
-	       	 data : {
-					'authcode' : code
-		 
-				},
-	        dataType: 'text',
-	        async: false,
-	        success: function (result) {
-	          if (result == "0") {
-						authcodeCheck = true;
-					} else{
-					authcodeCheck = false;
-					}
- 			},
-	        error: function (XMLHttpRequest, textStatus,errorThrown) {
-	             	alert("网络繁忙，请稍后！");
-	        }
-        });
-		 
-	}
-		function mrbjOpen(){
-		     var sglcheckid = $("#mrbj123sdfsdfsddsigcheckid_hidden").val();
-		     var sglpwd=  $("#mrbj123sdfsdfsddpwd_hidden").val(); 
+	function mrbjOpen(){
+		     var sglcheckid = parent.document.all.mrbj123sdfsdfsddsigcheckid_hidden.value;
+		     var sglpwd= parent.document.all.mrbj123sdfsdfsddpwd_hidden.value;
 		     
 		     $("#mrsglcheckid").val(sglcheckid);
 		     $("#mrsglpwd").val(sglpwd);
 		     
 		     document.mrform.submit();
+			     
+			openWindow.dialog('close');
 	}
+	function SetBaiduWinHeight(obj) 
+		{ 
+			var win=obj; 
+			
+			win.height =  window.screen.height+50 ;
+
+		} 
+	function closeBaiduDiv(){
+	$("#baiduDiv").css("display","none");
+	$("#pageContent").css("display","block");
+	}	
 </script>
+<style>body{background:#FFFAFA;width:652px;margin:0 auto;text_align:center;}.div647{border:solid;border-width:1px;width:652px;margin:0 auto;}</style><title>慈铭健康管理集团股份有限公司</title><table><tbody><tr><td></td></tr></tbody></table><table width="647"><tbody><tr><td width="647"><div align="center"><strong><font size="8px">健   康   体   检   报   告</font></strong></div></td><td></td></tr></tbody></table><table width="647"><tbody><tr><td><strong><u>尊敬的 廖** 您好！</u></strong></td><td><div align="right"><strong>002000718051618482</strong></div></td></tr><tr><td colspan="2"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;感谢您来深圳南山门诊部体检。现将您（2018-5-18）的体检结果汇总分析如下，请您认真阅读。如对体检结果或我们的建议有疑问，请您来院或致电健康咨询部（0755-86128150），我们将安排专业人员为您答疑解惑。欢迎您对我们的工作提出批评和建议。祝您健康！</td></tr></tbody></table><br><div class="div647"><table width="647"><tbody><tr bgcolor="#CCCCCC"><td><center> <strong><font size="5">汇总分析</font></strong></center></td></tr><tr><td>1.既往史提示：高血压病；体检血压高：159/95 mmHg </td></tr><tr><td>您有高血压病史，此次体检血压高。建议专科复诊，调整用药，同时关注血脂及动脉硬化防治，控制膳食总热量，用低脂、低盐、低糖高纤维素饮食，坚持有氧运动，控制体重，戒烟限酒。</td></tr><tr><td></td></tr><tr><td>  2.一般检查提示：体重指数＞24(参考范围:18.5-23.99)；腹部超声提示：脂肪肝（轻度）；生化检验提示：总胆固醇升高7.54mmol/L(参考范围:2.86―5.71)，甘油三酯偏高（合适范围：0.4-1.7mmo/L）1.76mmol/L，低密度脂蛋白胆固醇升高（合适范围：2-3.37mmol/L）4.85mmol/L，丙氨酸氨基转移酶略高49U/L(参考范围:0―40)</td></tr><tr><td>您的体重已属超重范围；超重是心血管病、2型糖尿病、血脂异常等疾病的危险因素。脂肪肝的发生与肥胖、糖尿病、高脂血症、脂肪摄入过多等有关。丙氨酸氨基转移酶增高可能是脂肪肝引起。低密度脂蛋白胆固醇高是冠心病的直接危险因素。请注意膳食平衡，在控制总热量的前提下限制富含饱和脂肪和胆固醇的食物（如：肥肉、内脏、蛋黄等），增加富含优质蛋白（如：瘦肉、鱼、豆类等）、膳食纤维食物及蔬菜、水果的比例；坚持有氧的中、低强度体力活动（如：走路、慢跑、跳舞、游泳等），控制体重，建议避免使用对肝脏有害的药物，半年复查，必要时服用调脂药物。</td></tr><tr><td></td></tr><tr><td>  3.眼科提示：双眼屈光不正</td></tr><tr><td>请平时注意用眼卫生；建议验光，必要时配镜。</td></tr><tr><td></td></tr><tr><td>  4.妇科提示：绝经期；宫颈涂片提示：部分表皮细胞萎缩，未见癌细胞和上皮细胞内病变；盆腔超声提示：绝经后子宫萎缩</td></tr><tr><td>宫颈涂片检查提示部分表皮细胞萎缩，未见癌细胞和上皮细胞内病变，建议定期复查,目前防癌普查模式超薄细胞检测如（TCT）更为准确，有条件可做此项目检查。</td></tr><tr><td></td></tr><tr><td>  5.耳鼻喉科提示：慢性单纯性咽炎</td></tr><tr><td>因急性咽炎反复发作而转成慢性，长期粉尘或有害气体刺激、烟酒过度或其它不良生活习惯、鼻窦炎分泌物刺激、过敏体质或身体抵抗力减低等。请注意避免咽部刺激，戒烟限酒，并适当进行局部治疗，请在医生指导下合理用药。</td></tr><tr><td></td></tr><tr><td>  6.腹部超声提示：右肾结石（多发）并肾盂积水（轻度）</td></tr><tr><td>肾盂积水是结石造成的尿路梗阻所致，请及时专科治疗，避免病侧肾脏不可逆的肾功能损害。</td></tr><tr><td></td></tr><tr><td>  7.盆腔超声提示：宫内节育器</td></tr><tr><td>建议定期复查。</td></tr><tr><td></td></tr><tr><td>  8.甲状腺彩超提示：甲状腺结节</td></tr><tr><td>建议三个月复查，观察变化，必要时专科治疗。</td></tr><tr><td></td></tr><tr><td>  9.尿素呼气试验提示：碳十四尿素呼气试验阳性93.00CPM(参考范围:0―50)</td></tr><tr><td>碳十四尿素呼气试验阳性提示可能有幽门螺杆菌（HP）感染。此感染为慢性胃炎和溃疡病的重要病因，国人的感染率大约在35-40%左右。您虽然本次体检碳十四尿素呼气试验阳性，但未提供有慢性胃炎、溃疡病史及上腹部疼痛、腹胀等相关不适，可暂以观察为主，也可在专科医生的指导下进行相关治疗。如出现胃部不适则需做进一步检查和治疗，幽门螺杆菌感染有明显家庭聚集性，您的家人有条件也可做尿素呼气试验，以了解是否同时存在有幽门螺杆菌感染。</td></tr><tr><td></td></tr><tr><td>  10.血常规提示：中性粒细胞比值低0.449(参考范围:0.5―0.7)，淋巴细胞比值高0.460(参考范围:0.2―0.4)</td></tr><tr><td>细微改变，暂不干预，建议酌情复查。</td></tr><tr><td></td></tr><tr><td>  11.生化检验提示：空腹血糖高7.45mmol/L(参考范围:3.6―6.1)</td></tr><tr><td>空腹血糖7.45mmol/L（正常参考值3.6～6.1mmol/L）。在高糖饮食、情绪激动、剧烈运动后也可出现空腹血糖略高。建议近期复查空腹血糖或餐后2小时血糖，同时控制膳食总热量,用低脂、少甜食、高纤维素膳食，坚持每天三十分钟中等强度体力活动（如慢跑、快走、骑自行车、游泳等），保持生活规律，心态平衡，定期监测血糖。</td></tr><tr><td></td></tr><tr><td>  12.HPV检测提示：HPV39型高危型HPV感染，HPV51型高危型HPV感染</td></tr><tr><td>人乳头瘤病毒中39、51型为高危亚型HPV。间隔6个月的连续两次检测显示同一高危亚型HPV感染阳性，才是持续高危亚型HPV感染。因此高危亚型HPV感染阳性者建议定期复查人乳头瘤病毒（HPV）基因分型和TCT细胞学检测。必要时请专科诊治。</td></tr><tr><td><div align="right"><br>汇总医生：程世成&nbsp;&nbsp;&nbsp;&nbsp;</div></td></tr></tbody></table></div><br><br><table width="652"><tbody><tr><td height="82"><div align="center"><p><font size="6"><strong>个人基本信息</strong></font> </p></div></td></tr><tr><td><div align="center">(以下内容由客人本人提供)</div></td></tr></tbody></table><table width="652" border="1"><tbody><tr><td width="50">姓名</td><td colspan="3">廖*****</td><td width="60">性别</td><td colspan="2">女</td><td width="74"> 出生日期</td><td width="157"></td><td width="33">年龄</td><td>54</td></tr><tr><td>国籍</td><td colspan="3">中国</td><td>民族</td><td colspan="2"></td><td>证件号</td><td>452123****7</td><td>婚否</td><td></td></tr><tr></tr></tbody></table><table width="652" border="1"><tbody><tr><td width="74">工作单位</td><td width="300">深圳市****</td><td width="76">手机</td><td>****</td></tr><tr><td>通信地址</td><td></td><td>办公电话</td><td>****</td></tr><tr><td>电子邮件</td><td></td><td>宅电 </td><td></td></tr></tbody></table><div class="div647"><table width="647" border="0"><tbody><tr><td colspan="4">职业</td></tr><tr><td><label><input type="checkbox">高级管理者</label></td><td><label><input type="checkbox">管理人员</label></td><td><label><input type="checkbox">营销人员</label></td><td><label><input type="checkbox">传媒业者</label></td></tr><tr><td><label><input type="checkbox">教育业者</label></td><td><label><input type="checkbox">零售/服务业者</label></td><td><label><input type="checkbox">科研人员</label></td><td><label><input type="checkbox">IT业者</label></td></tr><tr><td><label><input type="checkbox">文艺业者</label></td><td><label><input type="checkbox">司机</label></td><td><label><input type="checkbox">体力工作者</label></td><td><label><input type="checkbox">离退休人员</label></td></tr><tr><td><label><input type="checkbox">自由职业</label></td><td><label><input type="checkbox">其它职业</label></td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table></div><div class="div647"><table width="647" border="0"><tbody><tr><td colspan="4">既往史</td></tr><tr><td><label><input type="checkbox">其他</label></td><td><label><input type="checkbox" checked="checked">高血压病</label></td><td><label><input type="checkbox">脑卒中</label></td><td><label><input type="checkbox">冠心病</label></td></tr><tr><td><label><input type="checkbox">心肌梗塞</label></td><td><label><input type="checkbox">肺心病</label></td><td><label><input type="checkbox">糖尿病</label></td><td><label><input type="checkbox">脂肪肝</label></td></tr><tr><td><label><input type="checkbox">胆囊疾病</label></td><td><label><input type="checkbox">肾脏疾病</label></td><td><label><input type="checkbox">结核病</label></td><td><label><input type="checkbox">肝炎</label></td></tr><tr><td><label><input type="checkbox">肿瘤</label></td><td><label><input type="checkbox">妇科疾病</label></td><td><label><input type="checkbox">手术外伤</label></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;以上疾病治疗情况及现状</td></tr><tr><td colspan="4"><u></u><br></td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table></div><div class="div647"><table width="647" border="0"><tbody><tr><td colspan="4">您的直系亲属中是否患有下列疾病</td></tr><tr><td><label><input type="checkbox">未知</label></td><td><label><input type="checkbox">高血压病</label></td><td><label><input type="checkbox">脑卒中</label></td><td><label><input type="checkbox">冠心病</label></td></tr><tr><td><label><input type="checkbox">心肌梗塞</label></td><td><label><input type="checkbox">糖尿病</label></td><td><label><input type="checkbox">肝硬化</label></td><td><label><input type="checkbox">结核病</label></td></tr><tr><td><label><input type="checkbox">血液病</label></td><td><label><input type="checkbox">恶性肿瘤</label></td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table></div><div class="div647"><table width="647" border="0"><tbody><tr><td colspan="4">体检情况</td></tr><tr><td><label><input type="checkbox">每年一次</label></td><td><label><input type="checkbox">两年一次</label></td><td><label><input type="checkbox">两年以上</label></td><td><label><input type="checkbox">从未体检</label></td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table></div><div class="div647"><table width="647" border="0"><tbody><tr><td colspan="4">既往体检异常情况</td></tr><tr><td><label><input type="checkbox">血压高</label></td><td><label><input type="checkbox">胆囊结石</label></td><td><label><input type="checkbox">胆囊息肉</label></td><td><label><input type="checkbox">肾结石</label></td></tr><tr><td><label><input type="checkbox">卵巢囊肿</label></td><td><label><input type="checkbox">子宫肌瘤</label></td><td><label><input type="checkbox">空腹血糖高</label></td><td><label><input type="checkbox">血脂异常</label></td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table></div><div class="div647"><table width="647" border="0"><tbody><tr><td colspan="4">您目前有什么不适吗</td></tr><tr><td colspan="4"><u></u><br></td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table></div><br><br><table width="647"><tbody><tr><td><div align="center"><strong><font size="6">体 检 结 果</font></strong></div></td></tr></tbody></table><div class="div647"><table width="647"><tbody><tr bgcolor="#DDDDDD"><td colspan="5"><strong>&nbsp;&nbsp;<u>一般检查</u></strong></td></tr><tr><td width="40%">&nbsp;&nbsp;<strong>项目</strong></td><td width="25%"><strong>结果</strong></td><td width="10%"></td><td><strong>单位</strong></td><td><strong>参考范围</strong></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;身高</strong></td><td>151</td><td></td><td>cm</td><td></td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;体重</strong></td><td>59.00</td><td></td><td>Kg</td><td></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;体重指数</strong></td><td>25.88</td><td></td><td>kg/㎡</td><td>18.5-23.99</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;体检血压(收缩压)</strong></td><td>159</td><td></td><td>mmHg</td><td>90-140</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;体检血压(舒张压)</strong></td><td>95</td><td></td><td>mmHg</td><td>60-90</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;复测血压(收缩压)</strong></td><td></td><td></td><td>mmHg</td><td>90-140</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;复测血压(舒张压)</strong></td><td></td><td></td><td>mmHg</td><td>60-90</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;复测血压2(收缩压)</strong></td><td></td><td></td><td>mmHg</td><td>90-140</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;复测血压2(舒张压)</strong></td><td></td><td></td><td>mmHg</td><td>60-90</td></tr><tr><td colspan="5"><br><table width="647"><tbody><tr></tr><tr><td></td><td></td><td></td><td></td><td width="70">检查护士</td><td width="70">吕俊英</td></tr></tbody></table></td></tr></tbody></table></div><div class="div647"><table width="647"><tbody><tr bgcolor="#DDDDDD"><td colspan="2"><strong>&nbsp;&nbsp;<u>内科</u></strong></td></tr><tr><td width="40%">&nbsp;&nbsp;<strong>项目</strong></td><td><strong>结果</strong></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;胸部</strong></td><td valign="top">双侧对称无畸形</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;心率</strong></td><td valign="top">（70 ）次/分</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;心律</strong></td><td valign="top">规整</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;心音</strong></td><td valign="top">心音正常，各瓣膜区未闻及病理性杂音。</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;心界</strong></td><td valign="top">不大</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;肺</strong></td><td valign="top">双肺未闻及病理性呼吸音</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;腹部</strong></td><td valign="top">未见异常</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;肝脏</strong></td><td valign="top">肋下未触及</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;胆囊</strong></td><td valign="top">肋下未触及</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;脾脏</strong></td><td valign="top">肋下未触及</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;肾脏</strong></td><td valign="top">双肾区无叩击痛</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;神经系统</strong></td><td valign="top">生理反射存在</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;其他</strong></td><td valign="top"></td></tr><tr><td valign="top"><br><strong>&nbsp;&nbsp;体检所见</strong></td><td valign="top"><br>未见异常<br></td></tr><tr><td colspan="2"><br><table width="647"><tbody><tr></tr><tr><td></td><td></td><td></td><td></td><td width="70">检查医师</td><td width="70">张俐</td></tr></tbody></table></td></tr></tbody></table></div><div class="div647"><table width="647"><tbody><tr bgcolor="#DDDDDD"><td colspan="2"><strong>&nbsp;&nbsp;<u>外科</u></strong></td></tr><tr><td width="40%">&nbsp;&nbsp;<strong>项目</strong></td><td><strong>结果</strong></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;皮肤</strong></td><td valign="top">未见异常</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;浅表淋巴结</strong></td><td valign="top">未见异常</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;甲状腺</strong></td><td valign="top">未见异常</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;乳腺</strong></td><td valign="top">未见异常</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;脊柱</strong></td><td valign="top">未见异常</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;四肢与关节</strong></td><td valign="top">未见异常</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;其他</strong></td><td valign="top"></td></tr><tr><td valign="top"><br><strong>&nbsp;&nbsp;体检所见</strong></td><td valign="top"><br>外科一般检查未见明显异常<br></td></tr><tr><td colspan="2"><br><table width="647"><tbody><tr></tr><tr><td></td><td></td><td></td><td></td><td width="70">检查医师</td><td width="70">张俐</td></tr></tbody></table></td></tr></tbody></table></div><div class="div647"><table width="647"><tbody><tr bgcolor="#DDDDDD"><td colspan="2"><strong>&nbsp;&nbsp;<u>妇科</u></strong></td></tr><tr><td width="40%">&nbsp;&nbsp;<strong>项目</strong></td><td><strong>结果</strong></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;月经史</strong></td><td valign="top">绝经</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;周期时段</strong></td><td valign="top"></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;孕产史</strong></td><td valign="top">无</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;手术史</strong></td><td valign="top">无</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;外阴</strong></td><td valign="top">未见异常</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;阴道</strong></td><td valign="top">通畅、粘膜光滑</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;分泌物</strong></td><td valign="top">未见异常</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;宫颈</strong></td><td valign="top">点状充血</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;子宫体</strong></td><td valign="top">未见异常</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;附件</strong></td><td valign="top">未见异常</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;白带</strong></td><td valign="top">清洁度Ⅱ度  白细胞＋＋</td></tr><tr><td valign="top"><br><strong>&nbsp;&nbsp;体检所见</strong></td><td valign="top"><br>绝经期<br></td></tr><tr><td colspan="2"><br><table width="647"><tbody><tr></tr><tr><td></td><td></td><td></td><td></td><td width="70">检查医师</td><td width="70">张姣彬</td></tr></tbody></table></td></tr></tbody></table></div><div class="div647"><table width="647"><tbody><tr bgcolor="#DDDDDD"><td colspan="2"><strong>&nbsp;&nbsp;<u>宫颈涂片</u></strong></td></tr><tr><td width="40%">&nbsp;&nbsp;<strong>项目</strong></td><td><strong>结果</strong></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;宫颈涂片</strong></td><td valign="top">部分表皮细胞萎缩，未见癌细胞和上皮细胞内病变。</td></tr><tr><td valign="top"><br><strong>&nbsp;&nbsp;检验结果</strong></td><td valign="top"><br>部分表皮细胞萎缩，未见癌细胞和上皮细胞内病变。<br></td></tr><tr><td colspan="2"><br><table width="647"><tbody><tr></tr><tr><td></td><td></td><td></td><td></td><td width="70">检验师</td><td width="70">陈子秋</td></tr></tbody></table></td></tr></tbody></table></div><div class="div647"><table width="647"><tbody><tr bgcolor="#DDDDDD"><td colspan="2"><strong>&nbsp;&nbsp;<u>眼科</u></strong></td></tr><tr><td width="40%">&nbsp;&nbsp;<strong>项目</strong></td><td><strong>结果</strong></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;右眼裸视</strong></td><td valign="top">4.5/0.3</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;左眼裸视</strong></td><td valign="top">4.5/0.3</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;右眼矫正视力</strong></td><td valign="top"></td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;左眼矫正视力</strong></td><td valign="top"></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;色觉</strong></td><td valign="top">正常</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;眼睑</strong></td><td valign="top">未见异常</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;泪器</strong></td><td valign="top">未见异常</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;结膜</strong></td><td valign="top">未见异常</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;眼球</strong></td><td valign="top">未见异常</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;眼底</strong></td><td valign="top">未见异常</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;杯盘比</strong></td><td valign="top">正常</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;其他</strong></td><td valign="top"></td></tr><tr><td valign="top"><br><strong>&nbsp;&nbsp;体检所见</strong></td><td valign="top"><br>双眼屈光不正<br>眼底镜检查未见异常<br></td></tr><tr><td colspan="2"><br><table width="647"><tbody><tr></tr><tr><td></td><td></td><td></td><td></td><td width="70">检查医师</td><td width="70">罗满能</td></tr></tbody></table></td></tr></tbody></table></div><div class="div647"><table width="647"><tbody><tr bgcolor="#DDDDDD"><td colspan="2"><strong>&nbsp;&nbsp;<u>耳鼻喉科</u></strong></td></tr><tr><td width="40%">&nbsp;&nbsp;<strong>项目</strong></td><td><strong>结果</strong></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;听力</strong></td><td valign="top">正常</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;外耳</strong></td><td valign="top">未见异常</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;外耳道</strong></td><td valign="top">未见异常</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;鼓膜</strong></td><td valign="top">未见异常</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;外鼻</strong></td><td valign="top">未见异常</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;鼻腔</strong></td><td valign="top">未见异常</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;鼻窦</strong></td><td valign="top">未见异常</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;咽部</strong></td><td valign="top">咽后壁粘膜慢性充血呈暗红色，咽后壁淋巴滤泡增生。</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;扁桃体</strong></td><td valign="top">未见异常</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;其他</strong></td><td valign="top"></td></tr><tr><td valign="top"><br><strong>&nbsp;&nbsp;体检所见</strong></td><td valign="top"><br>慢性单纯性咽炎<br></td></tr><tr><td colspan="2"><br><table width="647"><tbody><tr></tr><tr><td></td><td></td><td></td><td></td><td width="70">检查医师</td><td width="70">罗满能</td></tr></tbody></table></td></tr></tbody></table></div><div class="div647"><table width="647"><tbody><tr bgcolor="#DDDDDD"><td colspan="2"><strong>&nbsp;&nbsp;<u>腹部超声</u></strong></td></tr><tr><td width="40%">&nbsp;&nbsp;<strong>项目</strong></td><td><strong>结果</strong></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;肝脏彩超</strong></td><td valign="top">肝脏大小正常，回声弥漫性稍增强，肝内管道结构尚清晰。</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;胆囊彩超</strong></td><td valign="top">胆囊大小形态正常，壁不厚，囊内回声清晰,未见异常血流信号。</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;脾脏彩超</strong></td><td valign="top">大小形态未见异常，回声正常，未见异常血流信号。</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;胰腺彩超</strong></td><td valign="top">未见异常</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;肾脏彩超</strong></td><td valign="top">右肾集合系统内可见多个强回声，最大约（0.8）cm，后方伴声影。其集合系统呈扁圆形分离，最宽处约（ 1.7）cm，肾脏外形及肾实质无改变。</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;其他</strong></td><td valign="top"></td></tr><tr><td valign="top"><br><strong>&nbsp;&nbsp;检查所见</strong></td><td valign="top"><br>脂肪肝（轻度）右肾结石（多发）并肾盂积水（轻度）建议进一步检查<br></td></tr><tr><td colspan="2"><br><table width="647"><tbody><tr></tr><tr><td></td><td></td><td></td><td></td><td width="70">检查医师</td><td width="70">陈源鸿/ 王慧芝</td></tr></tbody></table></td></tr></tbody></table></div><div class="div647"><table width="647"><tbody><tr bgcolor="#DDDDDD"><td colspan="2"><strong>&nbsp;&nbsp;<u>盆腔超声</u></strong></td></tr><tr><td width="40%">&nbsp;&nbsp;<strong>项目</strong></td><td><strong>结果</strong></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;子宫彩超</strong></td><td valign="top">绝经后子宫体积缩小，内膜不厚，肌壁回声未见异常。宫内可见节育器强回声区。</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;附件彩超</strong></td><td valign="top">未见异常回声。</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;其他</strong></td><td valign="top"></td></tr><tr><td valign="top"><br><strong>&nbsp;&nbsp;检查所见</strong></td><td valign="top"><br>绝经后子宫萎缩宫内节育器<br></td></tr><tr><td colspan="2"><br><table width="647"><tbody><tr></tr><tr><td></td><td></td><td></td><td></td><td width="70">检查医师</td><td width="70">陈源鸿/ 温柳霞</td></tr></tbody></table></td></tr></tbody></table></div><div class="div647"><table width="647"><tbody><tr bgcolor="#DDDDDD"><td colspan="2"><strong>&nbsp;&nbsp;<u>甲状腺彩超</u></strong></td></tr><tr><td width="40%">&nbsp;&nbsp;<strong>项目</strong></td><td><strong>结果</strong></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;甲状腺</strong></td><td valign="top">右叶甲状腺内见一个低回声结节，大小约（0.5）×（0.3）cm，内呈点状回声，结节周边无血管环绕。余腺体未见明显异常。</td></tr><tr><td valign="top"><br><strong>&nbsp;&nbsp;检查所见</strong></td><td valign="top"><br>甲状腺结节<br></td></tr><tr><td colspan="2"><br><table width="647"><tbody><tr></tr><tr><td></td><td></td><td></td><td></td><td width="70">检查医师</td><td width="70">陈源鸿/ 王慧芝</td></tr></tbody></table></td></tr></tbody></table></div><div class="div647"><table width="647"><tbody><tr bgcolor="#DDDDDD"><td colspan="2"><strong>&nbsp;&nbsp;<u>乳腺彩超</u></strong></td></tr><tr><td width="40%">&nbsp;&nbsp;<strong>项目</strong></td><td><strong>结果</strong></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;乳腺彩超</strong></td><td valign="top">未见异常</td></tr><tr><td valign="top"><br><strong>&nbsp;&nbsp;检查所见</strong></td><td valign="top"><br>乳腺未见异常<br></td></tr><tr><td colspan="2"><br><table width="647"><tbody><tr></tr><tr><td></td><td></td><td></td><td></td><td width="70">检查医师</td><td width="70">陈源鸿/ 王慧芝</td></tr></tbody></table></td></tr></tbody></table></div><div class="div647"><table width="647"><tbody><tr bgcolor="#DDDDDD"><td colspan="2"><strong>&nbsp;&nbsp;<u>胸部摄片</u></strong></td></tr><tr><td width="40%">&nbsp;&nbsp;<strong>项目</strong></td><td><strong>结果</strong></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;肺野</strong></td><td valign="top">未见异常</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;肺门</strong></td><td valign="top">未见异常</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;纵隔</strong></td><td valign="top">未见异常</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;心影</strong></td><td valign="top">未见异常</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;膈肌</strong></td><td valign="top">未见异常</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;胸膜</strong></td><td valign="top">未见异常</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;胸廓</strong></td><td valign="top">未见异常</td></tr><tr><td valign="top"><br><strong>&nbsp;&nbsp;检查所见</strong></td><td valign="top"><br>胸部正位DR未见异常<br></td></tr><tr><td colspan="2"><br><table width="647"><tbody><tr></tr><tr><td></td><td></td><td></td><td></td><td width="70">检查医师</td><td width="70">fs-陈怀权</td></tr></tbody></table></td></tr></tbody></table></div><div class="div647"><table width="647"><tbody><tr bgcolor="#DDDDDD"><td colspan="2"><strong>&nbsp;&nbsp;<u>心电图</u></strong></td></tr><tr><td valign="top"><br><strong>&nbsp;&nbsp;检查所见</strong></td><td valign="top"><br>正常心电图<br></td></tr><tr><td colspan="2"><br><table width="647"><tbody><tr></tr><tr><td></td><td></td><td></td><td></td><td width="70">检查医师</td><td width="70">赵丽霞</td></tr></tbody></table></td></tr></tbody></table></div><div class="div647"><table width="647"><tbody><tr bgcolor="#DDDDDD"><td colspan="5"><strong>&nbsp;&nbsp;<u>血常规</u></strong></td></tr><tr><td width="40%">&nbsp;&nbsp;<strong>项目</strong></td><td width="25%"><strong>结果</strong></td><td width="10%"></td><td><strong>单位</strong></td><td><strong>参考范围</strong></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;红细胞计数（RBC）</strong></td><td>4.73</td><td></td><td>10^12/L</td><td>3.68―5.13</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;血红蛋白(HGB)</strong></td><td>136.0</td><td></td><td>g/L</td><td>113―151</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;红细胞压积(HCT)</strong></td><td>0.42</td><td></td><td></td><td>0.34―0.45</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;平均红细胞体积（MCV）</strong></td><td>87.70</td><td></td><td>fL</td><td>82.6―99.1</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;平均红细胞血红蛋白含量（MCH）</strong></td><td>28.80</td><td></td><td>pg</td><td>26.9―33.3</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;平均红细胞血红蛋白浓度（MCHC）</strong></td><td>328</td><td></td><td>g/L</td><td>322―362</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;红细胞体积分布宽度变异系数（RDW-CV）</strong></td><td>13.50</td><td></td><td>%</td><td>11―15.5</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;红细胞体积分布宽度标准差（RDW-SD）</strong></td><td>41.90</td><td></td><td>fL</td><td>35―60</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;白细胞计数（WBC）</strong></td><td>6.69</td><td></td><td>10^9/L</td><td>3.69―9.16</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;中性粒细胞比值（GRA）</strong></td><td>0.449</td><td>↓</td><td></td><td>0.5―0.7</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;中性粒细胞绝对值（GRA#）</strong></td><td>3.000</td><td></td><td>10^9/L</td><td>2―7</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;淋巴细胞比值（LYM）</strong></td><td>0.460</td><td>↑</td><td></td><td>0.2―0.4</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;淋巴细胞绝对值（LYM#）</strong></td><td>3.100</td><td></td><td>10^9/L</td><td>1―6</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;单核细胞比值（MONO）</strong></td><td>0.048</td><td></td><td></td><td>0.03―0.1</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;单核细胞绝对值(MONO#)</strong></td><td>0.320</td><td></td><td>10^9/L</td><td>0.12―1</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;嗜酸性粒细胞比值（EO）</strong></td><td>0.039</td><td></td><td></td><td>0.005―0.05</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;嗜酸性粒细胞绝对值(EO#)</strong></td><td>0.260</td><td></td><td>10^9/L</td><td>0―0.45</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;嗜碱性粒细胞比值（BASO）</strong></td><td>0.001</td><td></td><td></td><td>0―0.01</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;嗜碱性粒细胞绝对值(BASO#)</strong></td><td>0.010</td><td></td><td>10^9/L</td><td>0―0.2</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;血小板(PLT)</strong></td><td>205.0</td><td></td><td>10^9/L</td><td>100―320</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;平均血小板体积（MPV）</strong></td><td>9.90</td><td></td><td>fL</td><td>8―15</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;血小板容积分布宽度（PDW）</strong></td><td>11.20</td><td></td><td>fL</td><td>9.8―18.2</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;大血小板比率（P-LCR）</strong></td><td>0.25</td><td></td><td></td><td>0.15―0.48</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;血小板比容（PCT）</strong></td><td>0.0020</td><td></td><td></td><td>0.0011―0.0028</td></tr><tr><td colspan="5"><br><table width="647"><tbody><tr></tr><tr><td></td><td></td><td width="70">检验</td><td width="70">陈子秋</td><td width="70">审核</td><td width="70">管伟伟</td></tr></tbody></table></td></tr></tbody></table></div><div class="div647"><table width="647"><tbody><tr bgcolor="#DDDDDD"><td colspan="5"><strong>&nbsp;&nbsp;<u>生化检验</u></strong></td></tr><tr><td width="40%">&nbsp;&nbsp;<strong>项目</strong></td><td width="25%"><strong>结果</strong></td><td width="10%"></td><td><strong>单位</strong></td><td><strong>参考范围</strong></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;丙氨酸氨基转移酶（ALT）</strong></td><td>49</td><td>↑</td><td>U/L</td><td>0―40</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;天门冬氨酸氨基转移酶（AST）</strong></td><td>31</td><td></td><td>U/L</td><td>0―40</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;γ-谷氨酰转移酶（GGT）</strong></td><td>39</td><td></td><td>U/L</td><td>0―50</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;碱性磷酸酶(ALP)</strong></td><td>62.00</td><td></td><td>U/L</td><td>40.00―150.00</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;乳酸脱氢酶（LDH）</strong></td><td>194</td><td></td><td>U/L</td><td>114―240</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;血清淀粉酶（AMY）</strong></td><td>58</td><td></td><td>U/L</td><td>0―180</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;肌酸激酶（CK）</strong></td><td>114</td><td></td><td>U/L</td><td>0―140</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;肌酸激酶同工酶（CK-MB）</strong></td><td>10</td><td></td><td>U/L</td><td>0―25</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;α-羟丁酸脱氢酶（α-HBDH）</strong></td><td>129</td><td></td><td>U/L</td><td>72―182</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;总胆固醇（TC）</strong></td><td>7.54</td><td>↑</td><td>mmol/L</td><td>2.86―5.71</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;甘油三酯（TG）</strong></td><td>1.76</td><td>↑</td><td>mmol/L</td><td>0.4―1.7</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;高密度脂蛋白胆固醇（HDL-CHO）</strong></td><td>1.52</td><td></td><td>mmol/L</td><td>1.04―1.55</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;低密度脂蛋白胆固醇（LDL-CHO）</strong></td><td>4.85</td><td>↑</td><td>mmol/L</td><td>2.00―3.37</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;尿素（Urea）</strong></td><td>5.00</td><td></td><td>mmol/L</td><td>2.5―8.2</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;肌酐（Cr）</strong></td><td>62.00</td><td></td><td>μmol/L</td><td>30―84</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;尿酸（UA）</strong></td><td>353.00</td><td></td><td>μmol/L</td><td>90―360</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;空腹血糖（FPG）</strong></td><td>7.45</td><td>↑</td><td>mmol/L</td><td>3.6―6.1</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;ALT/AST比值</strong></td><td>1.58</td><td></td><td></td><td></td></tr><tr><td colspan="5"><br><table width="647"><tbody><tr></tr><tr><td></td><td></td><td width="70">检验</td><td width="70">许程</td><td width="70">审核</td><td width="70">袁玮</td></tr></tbody></table></td></tr></tbody></table></div><div class="div647"><table width="647"><tbody><tr bgcolor="#DDDDDD"><td colspan="5"><strong>&nbsp;&nbsp;<u>肿瘤检测</u></strong></td></tr><tr><td width="40%">&nbsp;&nbsp;<strong>项目</strong></td><td width="25%"><strong>结果</strong></td><td width="10%"></td><td><strong>单位</strong></td><td><strong>参考范围</strong></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;甲胎蛋白(AFP)（酶免法）</strong></td><td>2.93</td><td></td><td>mL</td><td>0―20</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;癌胚抗原(CEA)（酶免法）</strong></td><td>0.85</td><td></td><td>mL</td><td>0―5</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;a-岩藻糖苷酶（AFU)</strong></td><td>16.20</td><td></td><td>u/L</td><td>10―35</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;肿瘤特异生长因子（TSGF）</strong></td><td>54.00</td><td></td><td>mL</td><td>0―63</td></tr><tr><td colspan="5"><br><table width="647"><tbody><tr></tr><tr><td></td><td></td><td width="70">检验</td><td width="70">许程</td><td width="70">审核</td><td width="70">袁玮</td></tr></tbody></table></td></tr></tbody></table></div><div class="div647"><table width="647"><tbody><tr bgcolor="#DDDDDD"><td colspan="2"><strong>&nbsp;&nbsp;<u>HPV检测</u></strong></td></tr><tr><td width="40%">&nbsp;&nbsp;<strong>项目</strong></td><td><strong>结果</strong></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;人乳头瘤病毒 （HPV）分型检测</strong></td><td valign="top">HPV16阴性  HPV18阴性  HPV31阴性  HPV33阴性  HPV35阴性 HPV39阳性  HPV45阴性  HPV51阳性  HPV52阴性  HPV53阴性  HPV56阴性  HPV58阴性  HPV59阴性  HPV66阴性  HPV68阴性  HPV73阴性  HPV83阴性  HPVMM4阴性 HPV6阴性   HPV11阴性  HPV42阴性  HPV43阴性  HPV44阴性</td></tr><tr><td colspan="2"><br><table width="647"><tbody><tr></tr><tr><td></td><td></td><td width="70">检验</td><td width="70">管伟伟</td><td width="70">审核</td><td width="70">陈子秋</td></tr></tbody></table></td></tr></tbody></table></div><div class="div647"><table width="647"><tbody><tr bgcolor="#DDDDDD"><td colspan="5"><strong>&nbsp;&nbsp;<u>尿素呼气试验</u></strong></td></tr><tr><td width="40%">&nbsp;&nbsp;<strong>项目</strong></td><td width="25%"><strong>结果</strong></td><td width="10%"></td><td><strong>单位</strong></td><td><strong>参考范围</strong></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;C14尿素呼气试验</strong></td><td>93.00</td><td>↑</td><td>CPM</td><td>0―50</td></tr><tr><td valign="top"><br><strong>&nbsp;&nbsp;检验结果</strong></td><td colspan="4" valign="top"><br>碳十四尿素呼气试验阳性93.00CPM(参考范围:0―50)<br></td></tr><tr><td colspan="5"><br><table width="647"><tbody><tr></tr><tr><td></td><td></td><td width="70">检验</td><td width="70">牛素琴</td><td width="70">审核</td><td width="70">袁玮</td></tr></tbody></table></td></tr></tbody></table></div><div class="div647"><table width="647"><tbody><tr bgcolor="#DDDDDD"><td colspan="5"><strong>&nbsp;&nbsp;<u>尿常规</u></strong></td></tr><tr><td width="40%">&nbsp;&nbsp;<strong>项目</strong></td><td width="25%"><strong>结果</strong></td><td width="10%"></td><td><strong>单位</strong></td><td><strong>参考范围</strong></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;比重（SG）</strong></td><td>1.015</td><td></td><td></td><td>1.005―1.03</td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;pH值(pH)</strong></td><td>6.00</td><td></td><td></td><td>4.5―8</td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;白细胞(LEU)</strong></td><td>neg</td><td></td><td></td><td></td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;隐血(ERY)</strong></td><td>neg</td><td></td><td></td><td></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;亚硝酸盐(NIT)</strong></td><td>neg</td><td></td><td></td><td></td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;酮体(KET)</strong></td><td>neg</td><td></td><td></td><td></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;胆红素(BIL)</strong></td><td>neg</td><td></td><td></td><td></td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;尿胆元(UBG)</strong></td><td>neg</td><td></td><td></td><td></td></tr><tr bgcolor="#EEEEEE"><td valign="top"><strong>&nbsp;&nbsp;蛋白质(PRO)</strong></td><td>neg</td><td></td><td></td><td></td></tr><tr><td valign="top"><strong>&nbsp;&nbsp;葡萄糖(GLU)</strong></td><td>neg</td><td></td><td></td><td></td></tr><tr><td colspan="5"><br><table width="647"><tbody><tr></tr><tr><td></td><td></td><td width="70">检验</td><td width="70">陈子秋</td><td width="70">审核</td><td width="70">管伟伟</td></tr></tbody></table></td></tr></tbody></table></div>
 
-
-<script language="javascript">
-    function showSubNav(id){
-        document.getElementById(id).style.display='block';
-    }
-    function hideSubNav(id){
-        document.getElementById(id).style.display='none';
-    }
-</script>
-			</td>
-		</tr>
-	</tbody></table>
 </div>
 
-<!---------主体内容------ end    -->
-	
-<!----------底部 ----- start --->
-<div class="cus_bottom">
-	
 
-
-
-
-
-<div align="center" style="clear:both;line-height:25px;">
-		<p style="margin:0">全国统一服务电话：4007-000-666 集团地址：北京市朝阳区北苑路91号&nbsp;版权所有：慈铭健康体检管理集团股份有限公司 京ICP备0701777</p>
-</div>
-</div>
-<!--------  	 底部   ---end------->	
-	
+<!---------主体内容------ end   -->
 
 	</body></html>
